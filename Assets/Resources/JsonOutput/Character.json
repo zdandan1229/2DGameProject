@@ -1,0 +1,9 @@
+[
+  {
+    "Id": "char_testNPC",
+    "Name": "NPC",
+    "PortraitPath": "Sprites/portraitnormal",
+    "PrefabPath": "Prefabs/testNPC",
+    "Description": "테스트용 NPC이다."
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "Id": "dialogue_test_100",
+    "CharacterDataId": "char_testNPC",
+    "Description": "테스트용 대화입니다.<np>다음 대화가 잘 나오는지 확인.<np>선택지로 진입합니다.",
+    "NextDialogueId": "dialogue_test_200",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "CharacterPortraitPath": "Sprites/portraitnormal"
+  },
+  {
+    "Id": "dialogue_test_200",
+    "CharacterDataId": "char_testNPC",
+    "Description": "캐릭터의 표정을 바꾸는 선택지입니다.<np>어떤 표정으로 바꿀까요?",
+    "NextDialogueId": null,
+    "SelectionNameList": [
+      "기쁜 표정",
+      "슬픈 표정",
+      "화난 표정"
+    ],
+    "SelectionDialogueIdList": [
+      "dialogue_test_200_selection1",
+      "dialogue_test_200_selection2",
+      "dialogue_test_200_selection3"
+    ],
+    "CharacterPortraitPath": "Sprites/portraitnormal"
+  },
+  {
+    "Id": "dialogue_test_200_selection1",
+    "CharacterDataId": "char_testNPC",
+    "Description": "캐릭터가 기쁜 표정을 지었다",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "CharacterPortraitPath": "Sprites/portraithappy"
+  },
+  {
+    "Id": "dialogue_test_200_selection2",
+    "CharacterDataId": "char_testNPC",
+    "Description": "캐릭터가 슬픈 표정을 지었다",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "CharacterPortraitPath": "Sprites/portraitsad"
+  },
+  {
+    "Id": "dialogue_test_200_selection3",
+    "CharacterDataId": "char_testNPC",
+    "Description": "캐릭터가 화난 표정을 지었다",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "CharacterPortraitPath": "Sprites/portraitangry"
+  }
+]
