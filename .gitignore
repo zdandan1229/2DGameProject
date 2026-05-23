@@ -41,3 +41,9 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/
+
+# Unity recovery / generated leftovers
+Assets/_Recovery/
+Assets/_Recovery.meta
+JsonConverter/ExcelFiles/GPUCache/
+unity-batch-compile.log
