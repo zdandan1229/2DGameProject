@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "inspect_note_start",
+    "Description": "피가 묻어 있는 정체불명의 쪽지이다."
+  },
+  {
+    "Id": "inspect_note_description",
+    "Description": "어떤 내용이 적혀 있지만, 피 때문에 뒷부분을 알아볼 수 없다."
+  },
+  {
+    "Id": "inspect_note_blood",
+    "Description": "노트의 피는 검게 말라붙어 있다. 흘린 지 오랜 시간이 지난 듯하다."
+  }
+]

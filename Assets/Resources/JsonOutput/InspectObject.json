@@ -1,0 +1,9 @@
+[
+  {
+    "Id": "inspect_test_note",
+    "Name": "피가 묻은 노트",
+    "Description": "뭔가가 적혀 있는 노트이다. 조사해보자.",
+    "PrefabPath": "Prefabs/InspectObjects/Object_Note",
+    "StartInspectTextId": "inspect_note_start"
+  }
+]
