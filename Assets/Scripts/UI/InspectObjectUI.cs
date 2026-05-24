@@ -10,6 +10,7 @@ public class InspectObjectUI : UIBase
 
     [Header("Description")]
     [SerializeField] private Text Text_Description;
+    [SerializeField] private TextTypingEffect TypingEffect_Description;
 
     [Header("Next")]
     [SerializeField] private Button Button_Next;
@@ -62,6 +63,8 @@ public class InspectObjectUI : UIBase
 
     private void OnDisable()
     {
+        ClearDescriptionTyping();
+
         if (Button_Next != null)
         {
             Button_Next.onClick.RemoveListener(RequestNextDescription);
@@ -176,7 +179,13 @@ public class InspectObjectUI : UIBase
             return;
         }
 
-        Text_Description.text = description;
+        if (TrySetupDescriptionTypingEffect() == false)
+        {
+            Text_Description.text = description ?? string.Empty;
+            return;
+        }
+
+        TypingEffect_Description.Play(description);
     }
 
     public void CloseInspectObjectUI()
@@ -276,6 +285,8 @@ public class InspectObjectUI : UIBase
 
     private void ResetInspectPointProgress()
     {
+        ClearDescriptionTyping();
+
         _descriptionQueue.Clear();
         _inspectPointCount = 0;
         _isCompleteInspectDescriptionShown = false;
@@ -381,6 +392,12 @@ public class InspectObjectUI : UIBase
             return;
         }
 
+        if (IsDescriptionTyping())
+        {
+            SkipDescriptionTyping();
+            return;
+        }
+
         bool isNextDescriptionExist = ShowNextDescriptionPage();
         if (isNextDescriptionExist)
         {
@@ -401,5 +418,55 @@ public class InspectObjectUI : UIBase
         }
 
         Button_Next.gameObject.SetActive(isActive);
+    }
+
+    private void SkipDescriptionTyping()
+    {
+        if (TypingEffect_Description == null)
+        {
+            return;
+        }
+
+        TypingEffect_Description.Skip();
+    }
+
+    private void ClearDescriptionTyping()
+    {
+        if (TypingEffect_Description != null)
+        {
+            TypingEffect_Description.Clear();
+            return;
+        }
+
+        if (Text_Description != null)
+        {
+            Text_Description.text = string.Empty;
+        }
+    }
+
+    private bool IsDescriptionTyping()
+    {
+        return TypingEffect_Description != null && TypingEffect_Description.IsTyping;
+    }
+
+    private bool TrySetupDescriptionTypingEffect()
+    {
+        if (Text_Description == null)
+        {
+            Debug.LogWarning("InspectObjectUI의 Text_Description 참조가 누락되어 있습니다.");
+            return false;
+        }
+
+        if (TypingEffect_Description == null)
+        {
+            TypingEffect_Description = GetComponent<TextTypingEffect>();
+            if (TypingEffect_Description == null)
+            {
+                TypingEffect_Description = gameObject.AddComponent<TextTypingEffect>();
+            }
+        }
+
+        TypingEffect_Description.Initialize(Text_Description);
+        return true;
     }
 }

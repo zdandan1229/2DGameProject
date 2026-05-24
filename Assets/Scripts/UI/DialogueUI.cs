@@ -22,6 +22,7 @@ public class DialogueUI : UIBase, IPointerClickHandler
 
     [Header("Optional")]
     [SerializeField] private Button Button_Next;
+    [SerializeField] private TextTypingEffect TypingEffect_Description;
 
     private string _currentDialogueId;
     private Queue<string> _descriptionQueue = new Queue<string>();
@@ -61,6 +62,8 @@ public class DialogueUI : UIBase, IPointerClickHandler
 
     private void OnDisable()
     {
+        ClearDescriptionTyping();
+
         if (Button_Next != null)
         {
             Button_Next.onClick.RemoveListener(RequestNextDialogue);
@@ -126,6 +129,12 @@ public class DialogueUI : UIBase, IPointerClickHandler
             return;
         }
 
+        if (IsDescriptionTyping())
+        {
+            SkipDescriptionTyping();
+            return;
+        }
+
         if (GameDataManager.Instance == null)
         {
             Debug.LogWarning("GameDataManager.Instance가 존재하지 않아 다음 다이얼로그를 진행할 수 없습니다.");
@@ -156,6 +165,8 @@ public class DialogueUI : UIBase, IPointerClickHandler
 
     private void ResetDialogueUI()
     {
+        ClearDescriptionTyping();
+
         _descriptionQueue.Clear();
         ClearSelectionButtons();
 
@@ -164,7 +175,7 @@ public class DialogueUI : UIBase, IPointerClickHandler
             Layout_SelectionRoot.SetActive(false);
         }
 
-        if (Text_Description != null)
+        if (Text_Description != null && TypingEffect_Description == null)
         {
             Text_Description.text = string.Empty;
         }
@@ -472,10 +483,69 @@ public class DialogueUI : UIBase, IPointerClickHandler
 
     private void SetCurrentDialogueDescription(string description)
     {
+        if (Text_Description == null)
+        {
+            Debug.LogWarning("DialogueUI의 Text_Description 참조가 누락되어 있습니다.");
+            return;
+        }
+
+        if (TrySetupDescriptionTypingEffect() == false)
+        {
+            Text_Description.text = description ?? string.Empty;
+            return;
+        }
+
+        TypingEffect_Description.Play(description);
+    }
+
+    private void SkipDescriptionTyping()
+    {
+        if (TypingEffect_Description == null)
+        {
+            return;
+        }
+
+        TypingEffect_Description.Skip();
+    }
+
+    private void ClearDescriptionTyping()
+    {
+        if (TypingEffect_Description != null)
+        {
+            TypingEffect_Description.Clear();
+            return;
+        }
+
         if (Text_Description != null)
         {
-            Text_Description.text = description;
+            Text_Description.text = string.Empty;
         }
+    }
+
+    private bool IsDescriptionTyping()
+    {
+        return TypingEffect_Description != null && TypingEffect_Description.IsTyping;
+    }
+
+    private bool TrySetupDescriptionTypingEffect()
+    {
+        if (Text_Description == null)
+        {
+            Debug.LogWarning("DialogueUI의 Text_Description 참조가 누락되어 있습니다.");
+            return false;
+        }
+
+        if (TypingEffect_Description == null)
+        {
+            TypingEffect_Description = GetComponent<TextTypingEffect>();
+            if (TypingEffect_Description == null)
+            {
+                TypingEffect_Description = gameObject.AddComponent<TextTypingEffect>();
+            }
+        }
+
+        TypingEffect_Description.Initialize(Text_Description);
+        return true;
     }
 
     private void CloseDialogueUI()
