@@ -25,6 +25,7 @@ public class DialogueUI : UIBase, IPointerClickHandler
     [SerializeField] private TextTypingEffect TypingEffect_Description;
 
     private string _currentDialogueId;
+    private string _objectNameTokenValue;
     private Queue<string> _descriptionQueue = new Queue<string>();
     private List<GameObject> _createdSelectionButtonList = new List<GameObject>();
     private readonly int[][] _selectionSlotIndexMap =
@@ -81,10 +82,7 @@ public class DialogueUI : UIBase, IPointerClickHandler
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) ||
-            Input.GetKeyDown(KeyCode.Return) ||
-            Input.GetKeyDown(KeyCode.KeypadEnter) ||
-            Input.GetKeyDown(KeyCode.Z))
+        if (InputManager.GetDialogueNextDown())
         {
             RequestNextDialogue();
         }
@@ -96,6 +94,11 @@ public class DialogueUI : UIBase, IPointerClickHandler
     }
 
     public void StartDialogue(string dialogueId)
+    {
+        StartDialogue(dialogueId, string.Empty);
+    }
+
+    public void StartDialogue(string dialogueId, string objectName)
     {
         if (GameDataManager.Instance == null)
         {
@@ -113,7 +116,7 @@ public class DialogueUI : UIBase, IPointerClickHandler
         }
 
         _currentDialogueId = dialogueId;
-
+        _objectNameTokenValue = objectName ?? string.Empty;
         ResetDialogueUI();
         SetCharacterName(dialogueData.CharacterDataId);
         SetPortrait(dialogueData);
@@ -135,16 +138,16 @@ public class DialogueUI : UIBase, IPointerClickHandler
             return;
         }
 
+        bool isNextDescriptionExist = ShowNextDescriptionPage();
+        if (isNextDescriptionExist)
+        {
+            return;
+        }
+
         if (GameDataManager.Instance == null)
         {
             Debug.LogWarning("GameDataManager.Instance가 존재하지 않아 다음 다이얼로그를 진행할 수 없습니다.");
             CloseDialogueUI();
-            return;
-        }
-
-        bool isNextDescriptionExist = ShowNextDescriptionPage();
-        if (isNextDescriptionExist)
-        {
             return;
         }
 
@@ -183,23 +186,40 @@ public class DialogueUI : UIBase, IPointerClickHandler
 
     private void PrepareDescriptionQueue(string description)
     {
+        string replacedDescription = ReplaceDescriptionToken(description);
+
         if (string.IsNullOrEmpty(description))
         {
             _descriptionQueue.Enqueue(string.Empty);
             return;
         }
 
-        if (description.Contains("<np>"))
+        if (replacedDescription.Contains("<np>"))
         {
-            string[] dialogueDescriptionList = description.Split("<np>");
-            foreach (string desc in dialogueDescriptionList)
+            string[] dialogueDescriptionList = replacedDescription.Split("<np>");
+            for (int i = 0; i < dialogueDescriptionList.Length; i++)
             {
-                _descriptionQueue.Enqueue(desc);
+                _descriptionQueue.Enqueue(dialogueDescriptionList[i]);
             }
             return;
         }
 
-        _descriptionQueue.Enqueue(description);
+        _descriptionQueue.Enqueue(replacedDescription);
+    }
+
+    private string ReplaceDescriptionToken(string description)
+    {
+        if (string.IsNullOrEmpty(description))
+        {
+            return string.Empty;
+        }
+
+        if (string.IsNullOrEmpty(_objectNameTokenValue))
+        {
+            return description;
+        }
+
+        return description.Replace("{ObjectName}", _objectNameTokenValue);
     }
 
     private bool ShowNextDescriptionPage()
@@ -240,7 +260,7 @@ public class DialogueUI : UIBase, IPointerClickHandler
                 return false;
             }
 
-            StartDialogue(nextDialogueId);
+            StartDialogue(nextDialogueId, _objectNameTokenValue);
             return true;
         }
 
@@ -384,7 +404,7 @@ public class DialogueUI : UIBase, IPointerClickHandler
             return;
         }
 
-        StartDialogue(nextDialogueId);
+        StartDialogue(nextDialogueId, _objectNameTokenValue);
     }
 
     private void ClearSelectionButtons()

@@ -18,12 +18,17 @@ public class InspectObjectUI : UIBase
     [Header("Exit")]
     [SerializeField] private Button Button_Exit;
     [SerializeField] private string _completeInspectDescription = "살펴볼 수 있는 부분을 모두 확인했어.";
+    [SerializeField] private string _defaultEndDialogueId = "dialogue_default_endinspect";
 
     private GameObject _createdObject;
+    private InspectObjectData _currentInspectObjectData;
+    private IInspectObjectCompleteHandler _completeHandler;
     private Queue<string> _descriptionQueue = new Queue<string>();
     private int _inspectPointCount;
     private bool _isCompleteInspectDescriptionShown;
     private bool _isInspectTextShowing;
+    private bool _isOpenedFromInventory;
+    private string _returnInventoryInspectObjectDataId;
     private HashSet<InspectPoint> _inspectedPointSet = new HashSet<InspectPoint>();
 
     private void OnEnable()
@@ -39,7 +44,7 @@ public class InspectObjectUI : UIBase
 
         if (Button_Exit != null)
         {
-            Button_Exit.onClick.AddListener(CloseInspectObjectUI);
+            Button_Exit.onClick.AddListener(RequestExitInspectObjectUI);
         }
         else
         {
@@ -72,10 +77,14 @@ public class InspectObjectUI : UIBase
 
         if (Button_Exit != null)
         {
-            Button_Exit.onClick.RemoveListener(CloseInspectObjectUI);
+            Button_Exit.onClick.RemoveListener(RequestExitInspectObjectUI);
         }
 
         ClearObject();
+        _currentInspectObjectData = null;
+        _completeHandler = null;
+        _isOpenedFromInventory = false;
+        _returnInventoryInspectObjectDataId = string.Empty;
 
         if (GameManager.Instance != null)
         {
@@ -89,11 +98,30 @@ public class InspectObjectUI : UIBase
 
     public void StartInspectObject(GameObject objectPrefab, string description)
     {
+        _currentInspectObjectData = null;
+        _completeHandler = null;
+        _isOpenedFromInventory = false;
+        _returnInventoryInspectObjectDataId = string.Empty;
         ShowObject(objectPrefab);
         StartDescription(description);
     }
 
     public void StartInspectObject(string inspectObjectDataId)
+    {
+        StartInspectObject(inspectObjectDataId, null);
+    }
+
+    public void StartInspectObject(string inspectObjectDataId, IInspectObjectCompleteHandler completeHandler)
+    {
+        StartInspectObjectInternal(inspectObjectDataId, completeHandler, false);
+    }
+
+    public void StartInspectObjectFromInventory(string inspectObjectDataId)
+    {
+        StartInspectObjectInternal(inspectObjectDataId, null, true);
+    }
+
+    private void StartInspectObjectInternal(string inspectObjectDataId, IInspectObjectCompleteHandler completeHandler, bool isOpenedFromInventory)
     {
         if (GameDataManager.Instance == null)
         {
@@ -125,8 +153,17 @@ public class InspectObjectUI : UIBase
             return;
         }
 
+        _currentInspectObjectData = inspectObjectData;
+        _completeHandler = completeHandler;
+        _isOpenedFromInventory = isOpenedFromInventory;
+        _returnInventoryInspectObjectDataId = isOpenedFromInventory ? inspectObjectDataId : string.Empty;
         ShowObject(objectPrefab);
         ShowStartInspectText(inspectObjectData);
+
+        if (_isOpenedFromInventory)
+        {
+            RefreshExitButton(true);
+        }
     }
 
     public void ShowInspectText(InspectPoint inspectPoint)
@@ -197,6 +234,84 @@ public class InspectObjectUI : UIBase
         }
 
         UIManager.Instance.CloseContentUI(UIType.InspectObjectUI);
+    }
+
+    private void RequestExitInspectObjectUI()
+    {
+        if (UIManager.Instance == null)
+        {
+            Debug.LogWarning("UIManager.Instance가 존재하지 않아 InspectObjectUI 종료 처리를 할 수 없습니다.");
+            return;
+        }
+
+        if (_currentInspectObjectData == null)
+        {
+            CloseInspectObjectUI();
+            return;
+        }
+
+        if (_isOpenedFromInventory)
+        {
+            string returnInspectObjectDataId = _returnInventoryInspectObjectDataId;
+            UIManager.Instance.CloseContentUI(UIType.InspectObjectUI);
+            UIManager.Instance.OpenInventoryPopup(returnInspectObjectDataId);
+            return;
+        }
+
+        string objectName = GetInspectObjectName(_currentInspectObjectData);
+        if (string.IsNullOrEmpty(objectName))
+        {
+            return;
+        }
+
+        if (string.IsNullOrEmpty(_defaultEndDialogueId))
+        {
+            Debug.LogWarning("조사 종료 후 출력할 기본 다이얼로그 ID가 비어 있습니다.");
+            return;
+        }
+
+        CompleteCurrentInspectObject();
+        UIManager.Instance.CloseContentUI(UIType.InspectObjectUI);
+        UIManager.Instance.OpenDialogueUI(_defaultEndDialogueId, objectName);
+    }
+
+    private void CompleteCurrentInspectObject()
+    {
+        if (_currentInspectObjectData == null)
+        {
+            Debug.LogWarning("완료 처리할 조사 오브젝트 데이터가 없습니다.");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(_currentInspectObjectData.Id))
+        {
+            Debug.LogWarning("완료 처리할 조사 오브젝트 ID가 비어 있습니다.");
+            return;
+        }
+
+        if (_completeHandler == null)
+        {
+            return;
+        }
+
+        _completeHandler.CompleteInspectObject(_currentInspectObjectData.Id);
+    }
+
+    private string GetInspectObjectName(InspectObjectData inspectObjectData)
+    {
+        if (inspectObjectData == null)
+        {
+            Debug.LogWarning("조사 종료 다이얼로그에 전달할 조사 오브젝트 데이터가 없습니다.");
+            return string.Empty;
+        }
+
+        if (string.IsNullOrEmpty(inspectObjectData.Name))
+        {
+            Debug.LogWarning($"조사 오브젝트 Name이 비어 있어 종료 다이얼로그의 ObjectName을 채울 수 없습니다 : {inspectObjectData.Id}");
+            return string.Empty;
+        }
+
+        return inspectObjectData.Name;
     }
 
     private void ShowDefaultObject()
@@ -308,6 +423,11 @@ public class InspectObjectUI : UIBase
 
     private void CheckCompleteInspect()
     {
+        if (_isOpenedFromInventory)
+        {
+            return;
+        }
+
         if (_isCompleteInspectDescriptionShown)
         {
             return;

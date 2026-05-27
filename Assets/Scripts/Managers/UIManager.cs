@@ -30,6 +30,31 @@ public class UIManager : MonoBehaviour
         // this.ShowStartupUIOnGameStart();
     }
 
+    private void Update()
+    {
+        if (InputManager.GetInventoryToggleDown())
+        {
+            RequestToggleInventory();
+        }
+    }
+
+    private void RequestToggleInventory()
+    {
+        if (IsUIOpened(UIType.Inventory))
+        {
+            CloseContentUI(UIType.Inventory);
+            return;
+        }
+
+        if (GameManager.Instance != null && GameManager.Instance.IsGamePaused)
+        {
+            Debug.LogWarning("게임이 일시정지 상태라 인벤토리 입력을 처리하지 않습니다.");
+            return;
+        }
+
+        this.OpenInventoryPopup();
+    }
+
     public UIBase OpenUI(UIRootType uiRootType, UIType uiType, bool isInitialHide = false)
     {
         // 딱히 요청이 있진 않고 오픈만 하면 되는 UI에서 사용
@@ -103,6 +128,21 @@ public class UIManager : MonoBehaviour
             CreateUI(uiRootType, uiType);
         }
         return _createdUIDic[uiType];
+    }
+
+    public UIBase FindCreatedUI(UIType uiType)
+    {
+        if (_createdUIDic.TryGetValue(uiType, out UIBase uiBase))
+        {
+            return uiBase;
+        }
+
+        return null;
+    }
+
+    public bool IsUIOpened(UIType uiType)
+    {
+        return _openedUIDic.Contains(uiType);
     }
 
 

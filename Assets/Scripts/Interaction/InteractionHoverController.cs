@@ -47,7 +47,7 @@ public class InteractionHoverController : MonoBehaviour
 
     private void TryRequestInteractionMenu()
     {
-        if (Input.GetMouseButtonDown(0) == false)
+        if (InputManager.GetPrimaryClickDown() == false)
         {
             return;
         }
@@ -67,14 +67,14 @@ public class InteractionHoverController : MonoBehaviour
         IInteractable interactable = optionProvider as IInteractable;
         if (interactable == null)
         {
-            Debug.LogWarning("선택된 상호작용 대상이 IInteractable을 구현하지 않았습니다.");
+            Debug.LogWarning("The selected interaction target does not implement IInteractable.");
             CloseInteractionMenu();
             return;
         }
 
         if (_player == null)
         {
-            Debug.LogWarning("InteractionHoverController의 Player 참조가 비어 있습니다.");
+            Debug.LogWarning("InteractionHoverController has no Player reference.");
             CloseInteractionMenu();
             return;
         }
@@ -87,8 +87,8 @@ public class InteractionHoverController : MonoBehaviour
 
     private IInteractionOptionProvider FindOptionProviderUnderMouse()
     {
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
+        float pointerZPosition = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
+        Vector3 mousePosition = InputManager.GetPointerScreenPosition(pointerZPosition);
 
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Collider2D collider = Physics2D.OverlapPoint(worldPosition);
@@ -110,28 +110,28 @@ public class InteractionHoverController : MonoBehaviour
     {
         if (arrivedInteractable == null)
         {
-            Debug.LogWarning("도착한 상호작용 대상이 비어 있어 InteractionMenuUI를 열 수 없습니다.");
+            Debug.LogWarning("Arrived interaction target is null, so InteractionMenuUI cannot be opened.");
             CloseInteractionMenu();
             return;
         }
 
         if (arrivedInteractable != _currentInteractable)
         {
-            Debug.LogWarning("도착한 상호작용 대상과 예약된 대상이 다릅니다.");
+            Debug.LogWarning("Arrived interaction target does not match the reserved target.");
             CloseInteractionMenu();
             return;
         }
 
         if (_currentOptionProvider == null)
         {
-            Debug.LogWarning("상호작용 옵션 제공자가 비어 있어 InteractionMenuUI를 열 수 없습니다.");
+            Debug.LogWarning("Interaction option provider is null, so InteractionMenuUI cannot be opened.");
             CloseInteractionMenu();
             return;
         }
 
         if (UIManager.Instance == null)
         {
-            Debug.LogWarning("UIManager.Instance가 존재하지 않아 InteractionMenuUI를 열 수 없습니다.");
+            Debug.LogWarning("UIManager.Instance is missing, so InteractionMenuUI cannot be opened.");
             CloseInteractionMenu();
             return;
         }
@@ -139,7 +139,7 @@ public class InteractionHoverController : MonoBehaviour
         List<InteractionOption> optionList = CreateMenuOptionList(_currentOptionProvider);
         if (optionList.Count <= 0)
         {
-            Debug.LogWarning("표시할 상호작용 옵션이 없습니다.");
+            Debug.LogWarning("There are no interaction options to display.");
             CloseInteractionMenu();
             return;
         }
@@ -151,7 +151,7 @@ public class InteractionHoverController : MonoBehaviour
     private List<InteractionOption> CreateMenuOptionList(IInteractionOptionProvider optionProvider)
     {
         List<InteractionOption> optionList = new List<InteractionOption>();
-        optionList.Add(new InteractionOption("나가기", InteractionActionType.ExitMenu, string.Empty));
+        optionList.Add(new InteractionOption("\uB098\uAC00\uAE30", InteractionActionType.ExitMenu, string.Empty));
 
         if (optionProvider == null)
         {
@@ -169,7 +169,7 @@ public class InteractionHoverController : MonoBehaviour
             InteractionOption interactionOption = providedOptionList[i];
             if (interactionOption == null || interactionOption.IsValid() == false)
             {
-                Debug.LogWarning($"상호작용 옵션 {i}번이 올바르지 않아 메뉴에 추가하지 않습니다.");
+                Debug.LogWarning($"Interaction option at index {i} is invalid and will not be added to the menu.");
                 continue;
             }
 
@@ -195,7 +195,7 @@ public class InteractionHoverController : MonoBehaviour
     {
         if (interactionOption == null)
         {
-            Debug.LogWarning("실행할 상호작용 옵션이 비어 있습니다.");
+            Debug.LogWarning("Interaction option to execute is null.");
             return;
         }
 
@@ -205,15 +205,63 @@ public class InteractionHoverController : MonoBehaviour
             return;
         }
 
-        IInteractable interactable = _currentInteractable;
+        IInteractionOptionProvider selectedOptionProvider = _currentOptionProvider;
         CloseInteractionMenu();
+        ExecuteInteractionOption(interactionOption, selectedOptionProvider);
+    }
 
-        if (interactable == null)
+    private void ExecuteInteractionOption(InteractionOption interactionOption, IInteractionOptionProvider optionProvider)
+    {
+        if (GameManager.Instance != null && GameManager.Instance.CanWorldInteract() == false)
         {
-            Debug.LogWarning("실행할 상호작용 대상이 비어 있습니다.");
             return;
         }
 
-        interactable.Interact();
+        if (UIManager.Instance == null)
+        {
+            Debug.LogWarning("UIManager.Instance is missing.");
+            return;
+        }
+
+        switch (interactionOption.ActionType)
+        {
+            case InteractionActionType.OpenDialogue:
+                OpenDialogue(interactionOption.TargetDataId);
+                break;
+            case InteractionActionType.OpenInspectObject:
+                OpenInspectObject(interactionOption.TargetDataId, optionProvider);
+                break;
+            case InteractionActionType.OpenStatus:
+            case InteractionActionType.PickupItem:
+            case InteractionActionType.EnterDoor:
+                Debug.LogWarning($"Interaction action is not implemented yet: {interactionOption.ActionType}");
+                break;
+            default:
+                Debug.LogWarning($"Unknown interaction action: {interactionOption.ActionType}");
+                break;
+        }
+    }
+
+    private void OpenDialogue(string dialogueId)
+    {
+        if (string.IsNullOrEmpty(dialogueId))
+        {
+            Debug.LogWarning("Dialogue id is empty.");
+            return;
+        }
+
+        UIManager.Instance.OpenDialogueUI(dialogueId);
+    }
+
+    private void OpenInspectObject(string inspectObjectDataId, IInteractionOptionProvider optionProvider)
+    {
+        if (string.IsNullOrEmpty(inspectObjectDataId))
+        {
+            Debug.LogWarning("Inspect object data id is empty.");
+            return;
+        }
+
+        IInspectObjectCompleteHandler completeHandler = optionProvider as IInspectObjectCompleteHandler;
+        UIManager.Instance.OpenInspectObjectUI(inspectObjectDataId, completeHandler);
     }
 }
