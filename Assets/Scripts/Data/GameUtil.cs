@@ -18,6 +18,7 @@ public static class GameUtil
         GameDataManager.Instance.LoadCharacterData("Character");
         GameDataManager.Instance.LoadDialogueData();
         GameDataManager.Instance.LoadInspectData();
+        GameDataManager.Instance.LoadInteractionData();
     }
 
     public static int CalcCharacterFinalDamage(int curCharacterLevel, int levelPerDamage, bool isCritical)
