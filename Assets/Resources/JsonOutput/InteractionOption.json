@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "option_talk_test",
+    "ButtonText": "대화하기",
+    "ActionType": "OpenDialogue",
+    "TargetDataId": "dialogue_test_100"
+  },
+  {
+    "Id": "option_status_test",
+    "ButtonText": "상태 보기",
+    "ActionType": "OpenStatus",
+    "TargetDataId": "char_testNPC"
+  },
+  {
+    "Id": "option_inspect_note",
+    "ButtonText": "조사하기",
+    "ActionType": "OpenInspectObject",
+    "TargetDataId": "inspect_test_note"
+  },
+  {
+    "Id": "option_pickup_note",
+    "ButtonText": "습득하기",
+    "ActionType": "PickupItem",
+    "TargetDataId": "item_note_001"
+  },
+  {
+    "Id": "option_enter_room01",
+    "ButtonText": "입장하기",
+    "ActionType": "EnterDoor",
+    "TargetDataId": "room_001"
+  }
+]

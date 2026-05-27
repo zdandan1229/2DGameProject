@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "interaction_npc_test",
+    "Name": "테스트 NPC",
+    "InteractionOptionIdList": [
+      "option_talk_test",
+      "option_status_test"
+    ]
+  },
+  {
+    "Id": "interaction_note_test",
+    "Name": "피가 묻은 노트",
+    "InteractionOptionIdList": [
+      "option_inspect_note"
+    ]
+  },
+  {
+    "Id": "interaction_door_room01",
+    "Name": "방 문",
+    "InteractionOptionIdList": [
+      "option_enter_room01"
+    ]
+  },
+  {
+    "Id": "interaction_pickup_note",
+    "Name": "습득 가능한 노트",
+    "InteractionOptionIdList": [
+      "option_inspect_note",
+      "option_pickup_note"
+    ]
+  }
+]
