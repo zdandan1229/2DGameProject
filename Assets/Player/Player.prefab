@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 3330210815878944437}
   - component: {fileID: 3694944804244474981}
   - component: {fileID: 2108040551035124693}
+  - component: {fileID: 7819867103948216205}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -200,6 +201,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   _moveSpeed: 3
   _rotateSpeed: 360
+--- !u!114 &7819867103948216205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235614819753961025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e87b2cdd5874eb2b850f0789973229c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionHoverController
+  _player: {fileID: 3330210815878944437}
+  _menuWorldOffset: {x: 0.85, y: 1.45, z: 0}
 --- !u!58 &3694944804244474981
 CircleCollider2D:
   m_ObjectHideFlags: 0
