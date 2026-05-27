@@ -51,5 +51,23 @@
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "CharacterPortraitPath": "Sprites/portraitangry"
+  },
+  {
+    "Id": null,
+    "CharacterDataId": null,
+    "Description": null,
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "CharacterPortraitPath": null
+  },
+  {
+    "Id": "dialogue_default_endinspect",
+    "CharacterDataId": null,
+    "Description": "[{ObjectName}]을(를) 소지품에 추가했다.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "CharacterPortraitPath": null
   }
 ]
