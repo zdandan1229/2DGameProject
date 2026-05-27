@@ -34,6 +34,8 @@ public class GameDataManager : MonoBehaviour
     public Dictionary<string, DialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DialogueData>();
     public Dictionary<string, InspectObjectData> InspectObjectDataList { get; private set; } = new Dictionary<string, InspectObjectData>();
     public Dictionary<string, InspectTextData> InspectTextDataList { get; private set; } = new Dictionary<string, InspectTextData>();
+    public Dictionary<string, InteractionObjectData> InteractionObjectDataList { get; private set; } = new Dictionary<string, InteractionObjectData>();
+    public Dictionary<string, InteractionOptionData> InteractionOptionDataList { get; private set; } = new Dictionary<string, InteractionOptionData>();
     public Dictionary<string, FieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, FieldObjectData>();
     public Dictionary<string, MonsterData> MonsterDataList { get; private set; } = new Dictionary<string, MonsterData>();
 
@@ -172,6 +174,27 @@ public class GameDataManager : MonoBehaviour
         }
     }
 
+    public void LoadInteractionData()
+    {
+        if (HasJsonTable("InteractionObject"))
+        {
+            InteractionObjectDataList = LoadData<InteractionObjectData>("InteractionObject");
+        }
+        else
+        {
+            InteractionObjectDataList = new Dictionary<string, InteractionObjectData>();
+        }
+
+        if (HasJsonTable("InteractionOption"))
+        {
+            InteractionOptionDataList = LoadData<InteractionOptionData>("InteractionOption");
+        }
+        else
+        {
+            InteractionOptionDataList = new Dictionary<string, InteractionOptionData>();
+        }
+    }
+
     public void LoadAll()
     {
         FieldObjectDataList = LoadData<FieldObjectData>("FieldObject");
@@ -243,6 +266,20 @@ public class GameDataManager : MonoBehaviour
         if (InspectTextDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return InspectTextDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public InteractionObjectData GetInteractionObjectData(string dataId)
+    {
+        if (InteractionObjectDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return InteractionObjectDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public InteractionOptionData GetInteractionOptionData(string dataId)
+    {
+        if (InteractionOptionDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return InteractionOptionDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
     public MonsterData GetMonsterData(string dataId)

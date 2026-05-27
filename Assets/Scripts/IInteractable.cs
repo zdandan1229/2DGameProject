@@ -6,3 +6,8 @@ public interface IInteractable
     float InteractionDistance { get; }
     void Interact();
 }
+
+public interface IInspectObjectCompleteHandler
+{
+    void CompleteInspectObject(string inspectObjectDataId);
+}

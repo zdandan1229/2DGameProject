@@ -77,6 +77,7 @@ public class InspectObjectData : GameDataBase
     public string Name;
     public string Description;
     public string PrefabPath;
+    public string IconPath;
     public string StartInspectTextId;
 }
 
@@ -84,6 +85,21 @@ public class InspectObjectData : GameDataBase
 public class InspectTextData : GameDataBase
 {
     public string Description;
+}
+
+[System.Serializable]
+public class InteractionObjectData : GameDataBase
+{
+    public string Name;
+    public List<string> InteractionOptionIdList;
+}
+
+[System.Serializable]
+public class InteractionOptionData : GameDataBase
+{
+    public string ButtonText;
+    public string ActionType;
+    public string TargetDataId;
 }
 
 [System.Serializable]

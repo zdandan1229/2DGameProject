@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class NPCDialogueTrigger : MonoBehaviour, IInteractable
+public class NPCDialogueTrigger : MonoBehaviour, IInteractable, IInteractionOptionProvider
 {
+    [SerializeField] private string _interactionObjectDataId;
     [SerializeField] private string _startDialogueId;
     [SerializeField] private float _interactionDistance = 1.5f;
 
@@ -15,11 +17,34 @@ public class NPCDialogueTrigger : MonoBehaviour, IInteractable
         get { return _interactionDistance; }
     }
 
+    public Transform InteractionMenuTransform
+    {
+        get { return transform; }
+    }
+
+    public List<InteractionOption> GetInteractionOptions()
+    {
+        List<InteractionOption> optionList = InteractionOptionFactory.CreateOptionList(_interactionObjectDataId);
+        if (optionList.Count > 0)
+        {
+            return optionList;
+        }
+
+        if (string.IsNullOrEmpty(_startDialogueId))
+        {
+            Debug.LogWarning($"{gameObject.name} has no dialogue id, so a fallback dialogue option cannot be created.");
+            return optionList;
+        }
+
+        optionList.Add(new InteractionOption("\uB300\uD654\uD558\uAE30", InteractionActionType.OpenDialogue, _startDialogueId));
+        return optionList;
+    }
+
     public void Interact()
     {
         if (string.IsNullOrEmpty(_startDialogueId))
         {
-            Debug.LogWarning($"{gameObject.name}의 시작 대화 ID가 비어 있습니다.");
+            Debug.LogWarning($"{gameObject.name} has no dialogue id.");
             return;
         }
 
@@ -30,7 +55,7 @@ public class NPCDialogueTrigger : MonoBehaviour, IInteractable
 
         if (UIManager.Instance == null)
         {
-            Debug.LogWarning("UIManager.Instance가 존재하지 않습니다.");
+            Debug.LogWarning("UIManager.Instance is missing.");
             return;
         }
 

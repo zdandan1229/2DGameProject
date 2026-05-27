@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class Player : MonoBehaviour
     private Vector2 _targetPosition;
     private bool _isMovingToMouseTarget;
     private IInteractable _reservedInteractable;
+    private Action<IInteractable> _onArriveInteractableCallback;
 
     private void Awake()
     {
@@ -52,44 +55,30 @@ public class Player : MonoBehaviour
     {
         _moveDirection = Vector2.zero;
         _isMovingToMouseTarget = false;
+        _reservedInteractable = null;
+        _onArriveInteractableCallback = null;
     }
 
     private void SetMoveDirection()
     {
-        _moveDirection = Vector2.zero;
-
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            _moveDirection += Vector2.up;
-        }
-
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            _moveDirection += Vector2.down;
-        }
-
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            _moveDirection += Vector2.left;
-        }
-
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            _moveDirection += Vector2.right;
-        }
-
-        _moveDirection.Normalize();
+        _moveDirection = InputManager.GetMoveDirection();
 
         if (_moveDirection != Vector2.zero)
         {
             _isMovingToMouseTarget = false;
             _reservedInteractable = null;
+            _onArriveInteractableCallback = null;
         }
     }
 
     private void SetMouseTarget()
     {
-        if (Input.GetMouseButtonDown(0) == false)
+        if (InputManager.GetPrimaryClickDown() == false)
+        {
+            return;
+        }
+
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }
@@ -99,20 +88,20 @@ public class Player : MonoBehaviour
             return;
         }
 
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
+        float pointerZPosition = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
+        Vector3 mousePosition = InputManager.GetPointerScreenPosition(pointerZPosition);
 
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         IInteractable interactable = FindInteractableAtPosition(worldPosition);
         if (interactable != null)
         {
-            RequestInteract(interactable);
             return;
         }
 
         SetTargetPosition(new Vector2(worldPosition.x, worldPosition.y));
         _reservedInteractable = null;
+        _onArriveInteractableCallback = null;
     }
 
     private void MovePlayer()
@@ -133,6 +122,12 @@ public class Player : MonoBehaviour
 
     private void MoveToDirection(Vector2 moveDirection)
     {
+        if (_rigidbody == null)
+        {
+            Debug.LogWarning("Player의 Rigidbody2D가 비어 있어 이동할 수 없습니다.");
+            return;
+        }
+
         Vector2 nextPosition = _rigidbody.position + moveDirection * _moveSpeed * Time.fixedDeltaTime;
 
         _rigidbody.MovePosition(nextPosition);
@@ -140,6 +135,13 @@ public class Player : MonoBehaviour
 
     private void MoveToMouseTarget()
     {
+        if (_rigidbody == null)
+        {
+            Debug.LogWarning("Player의 Rigidbody2D가 비어 있어 마우스 목표 지점으로 이동할 수 없습니다.");
+            _isMovingToMouseTarget = false;
+            return;
+        }
+
         if (_reservedInteractable != null)
         {
             UpdateInteractionTarget();
@@ -189,7 +191,12 @@ public class Player : MonoBehaviour
         return interactable;
     }
 
-    private void RequestInteract(IInteractable interactable)
+    public void RequestInteract(IInteractable interactable)
+    {
+        RequestInteract(interactable, null);
+    }
+
+    public void RequestInteract(IInteractable interactable, Action<IInteractable> onArriveInteractableCallback)
     {
         if (interactable == null)
         {
@@ -204,6 +211,7 @@ public class Player : MonoBehaviour
         }
 
         _reservedInteractable = interactable;
+        _onArriveInteractableCallback = onArriveInteractableCallback;
         UpdateInteractionTarget();
         _isMovingToMouseTarget = true;
     }
@@ -213,6 +221,7 @@ public class Player : MonoBehaviour
         if (_reservedInteractable == null || _reservedInteractable.InteractionTransform == null)
         {
             _reservedInteractable = null;
+            _onArriveInteractableCallback = null;
             _isMovingToMouseTarget = false;
             return;
         }
@@ -228,6 +237,12 @@ public class Player : MonoBehaviour
             return false;
         }
 
+        if (_rigidbody == null)
+        {
+            Debug.LogWarning("Player의 Rigidbody2D가 비어 있어 상호작용 거리를 확인할 수 없습니다.");
+            return false;
+        }
+
         float distance = Vector2.Distance(_rigidbody.position, _reservedInteractable.InteractionTransform.position);
         return distance <= _reservedInteractable.InteractionDistance;
     }
@@ -235,13 +250,21 @@ public class Player : MonoBehaviour
     private void ExecuteReservedInteractable()
     {
         IInteractable interactable = _reservedInteractable;
+        Action<IInteractable> arriveCallback = _onArriveInteractableCallback;
 
         _reservedInteractable = null;
+        _onArriveInteractableCallback = null;
         _isMovingToMouseTarget = false;
         _moveDirection = Vector2.zero;
 
         if (interactable == null)
         {
+            return;
+        }
+
+        if (arriveCallback != null)
+        {
+            arriveCallback.Invoke(interactable);
             return;
         }
 
@@ -256,6 +279,12 @@ public class Player : MonoBehaviour
 
     private void RotateSmoothly(Vector2 moveDirection)
     {
+        if (_rigidbody == null)
+        {
+            Debug.LogWarning("Player의 Rigidbody2D가 비어 있어 회전할 수 없습니다.");
+            return;
+        }
+
         float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg - 90f;
 
         float nextAngle = Mathf.MoveTowardsAngle(
