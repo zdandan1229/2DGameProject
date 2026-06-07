@@ -185,6 +185,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8234782063608216164}
+  - {fileID: 687311281591619385}
   - {fileID: 7761258716203704405}
   - {fileID: 8503335008042521264}
   - {fileID: 7345635689325632086}
@@ -209,13 +210,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InspectObjectUI
   Layout_ObjectRoot: {fileID: 8503335008042521264}
+  Layout_AreaRoot: {fileID: 687311281591619385}
   Prefab_Object: {fileID: 0}
+  Layout_DescriptionWindow: {fileID: 5193830367685099915}
   Text_Description: {fileID: 5461155367548610070}
   TypingEffect_Description: {fileID: 0}
   Button_Next: {fileID: 6272934378289446405}
   Button_Exit: {fileID: 8792231233496438431}
   _completeInspectDescription: "\uC0B4\uD3B4\uBCFC \uC218 \uC788\uB294 \uBD80\uBD84\uC740
     \uBAA8\uB450 \uD655\uC778\uD588\uB2E4."
+  _defaultEndDialogueId: dialogue_default_endinspect
+--- !u!1 &2437400456076255570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 687311281591619385}
+  m_Layer: 0
+  m_Name: Layout_AreaRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &687311281591619385
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2437400456076255570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2747892390482654031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2477064269672006971
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,9 +396,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: a61e8527aba32bd41b688e041bf88571, type: 3}
+    m_FontSize: 38
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
@@ -557,19 +596,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 747e9cf1e21d154468021109a3fcd7c2, type: 3}
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 45
+    m_MaxSize: 60
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD14D\uC2A4\uD2B8"
+  m_Text: "\uC548\uB155\uD558\uC138\uC694? \uD14C\uC2A4\uD2B8\uC6A9 \uB300\uD654
+    \uB0B4\uC5ED\uC785\uB2C8\uB2E4."
 --- !u!1 &5193830367685099915
 GameObject:
   m_ObjectHideFlags: 0
