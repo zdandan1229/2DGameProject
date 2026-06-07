@@ -7,7 +7,17 @@ public interface IInteractable
     void Interact();
 }
 
+public interface IInteractionPositionProvider
+{
+    Vector3 InteractionPosition { get; }
+}
+
 public interface IInspectObjectCompleteHandler
 {
-    void CompleteInspectObject(string inspectObjectDataId);
+    bool CompleteInspectObject(string inspectObjectDataId);
+}
+
+public interface IInspectObjectCompleteOptionProvider
+{
+    bool ShouldOpenCompleteDialogue();
 }

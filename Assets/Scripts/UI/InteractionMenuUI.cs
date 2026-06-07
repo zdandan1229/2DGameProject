@@ -11,11 +11,22 @@ public class InteractionMenuUI : UIBase, IPointerEnterHandler, IPointerExitHandl
 
     private List<InteractionMenuButton> _createdButtonList = new List<InteractionMenuButton>();
     private Action<InteractionOption> _onClickOptionCallback;
+    private Transform _followTarget;
+    private Vector3 _followWorldOffset;
+    private Vector3 _followWorldOffsetWhenNearRightEdge;
+    private float _followRightEdgeViewportLine;
     private bool _isPointerInside;
+    private bool _didLockPlayerMove;
+    private bool _blocksWorldInput;
 
     public bool IsPointerInside
     {
         get { return _isPointerInside; }
+    }
+
+    public bool BlocksWorldInput
+    {
+        get { return _blocksWorldInput; }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -30,8 +41,34 @@ public class InteractionMenuUI : UIBase, IPointerEnterHandler, IPointerExitHandl
 
     public void OpenMenu(List<InteractionOption> optionList, Vector3 worldPosition, Action<InteractionOption> onClickOptionCallback)
     {
+        OpenMenu(optionList, worldPosition, onClickOptionCallback, true, null, Vector3.zero);
+    }
+
+    public void OpenFollowMenuWithoutMoveLock(List<InteractionOption> optionList, Transform followTarget, Vector3 followWorldOffset, Vector3 followWorldOffsetWhenNearRightEdge, float followRightEdgeViewportLine, Action<InteractionOption> onClickOptionCallback)
+    {
+        if (followTarget == null)
+        {
+            Debug.LogWarning("Follow target is missing, so InteractionMenuUI cannot follow it.");
+            return;
+        }
+
+        _followWorldOffsetWhenNearRightEdge = followWorldOffsetWhenNearRightEdge;
+        _followRightEdgeViewportLine = followRightEdgeViewportLine;
+        OpenMenu(optionList, GetFollowMenuWorldPosition(followTarget, followWorldOffset, followWorldOffsetWhenNearRightEdge, followRightEdgeViewportLine), onClickOptionCallback, false, followTarget, followWorldOffset);
+    }
+
+    private void OpenMenu(List<InteractionOption> optionList, Vector3 worldPosition, Action<InteractionOption> onClickOptionCallback, bool shouldLockPlayerMove, Transform followTarget, Vector3 followWorldOffset)
+    {
         _onClickOptionCallback = onClickOptionCallback;
+        _followTarget = followTarget;
+        _followWorldOffset = followWorldOffset;
+        _blocksWorldInput = shouldLockPlayerMove;
         _isPointerInside = false;
+
+        if (shouldLockPlayerMove)
+        {
+            RequestLockPlayerMove();
+        }
 
         SetMenuPosition(worldPosition);
         RefreshButtons(optionList);
@@ -39,10 +76,54 @@ public class InteractionMenuUI : UIBase, IPointerEnterHandler, IPointerExitHandl
 
     public void CloseMenu()
     {
+        ReleasePlayerMoveLock();
+        _followTarget = null;
+        _followWorldOffset = Vector3.zero;
+        _followWorldOffsetWhenNearRightEdge = Vector3.zero;
+        _followRightEdgeViewportLine = 0f;
+        _blocksWorldInput = false;
         _isPointerInside = false;
         _onClickOptionCallback = null;
         ClearButtons();
         RefreshButtonRoots(false);
+    }
+
+    private void OnDisable()
+    {
+        CloseMenu();
+    }
+
+    private void LateUpdate()
+    {
+        if (_followTarget == null)
+        {
+            return;
+        }
+
+        SetMenuPosition(GetFollowMenuWorldPosition(_followTarget, _followWorldOffset, _followWorldOffsetWhenNearRightEdge, _followRightEdgeViewportLine));
+    }
+
+    private Vector3 GetFollowMenuWorldPosition(Transform followTarget, Vector3 normalOffset, Vector3 offsetWhenNearRightEdge, float rightEdgeViewportLine)
+    {
+        if (followTarget == null)
+        {
+            Debug.LogWarning("Follow target is missing, so InteractionMenuUI position cannot be updated.");
+            return Vector3.zero;
+        }
+
+        if (Camera.main == null)
+        {
+            Debug.LogWarning("Camera.main is missing, so InteractionMenuUI uses normal follow offset.");
+            return followTarget.position + normalOffset;
+        }
+
+        Vector3 viewportPosition = Camera.main.WorldToViewportPoint(followTarget.position);
+        if (viewportPosition.x >= rightEdgeViewportLine)
+        {
+            return followTarget.position + offsetWhenNearRightEdge;
+        }
+
+        return followTarget.position + normalOffset;
     }
 
     private void SetMenuPosition(Vector3 worldPosition)
@@ -134,7 +215,7 @@ public class InteractionMenuUI : UIBase, IPointerEnterHandler, IPointerExitHandl
             }
 
             InteractionOption interactionOption = optionList[i];
-            if (interactionOption == null || interactionOption.IsValid() == false)
+            if (interactionOption == null || interactionOption.CanShowInMenu() == false)
             {
                 Debug.LogWarning($"상호작용 옵션 {i}번이 올바르지 않아 버튼 생성을 건너뜁니다.");
                 continue;
@@ -186,5 +267,40 @@ public class InteractionMenuUI : UIBase, IPointerEnterHandler, IPointerExitHandl
         }
 
         _onClickOptionCallback.Invoke(interactionOption);
+    }
+
+    private void RequestLockPlayerMove()
+    {
+        if (_didLockPlayerMove == true)
+        {
+            return;
+        }
+
+        if (GameManager.Instance == null)
+        {
+            Debug.LogWarning("GameManager.Instance가 없어 플레이어 이동을 잠글 수 없습니다.");
+            return;
+        }
+
+        GameManager.Instance.LockPlayerMove();
+        _didLockPlayerMove = true;
+    }
+
+    private void ReleasePlayerMoveLock()
+    {
+        if (_didLockPlayerMove == false)
+        {
+            return;
+        }
+
+        if (GameManager.Instance == null)
+        {
+            Debug.LogWarning("GameManager.Instance가 없어 플레이어 이동 잠금을 해제할 수 없습니다.");
+            _didLockPlayerMove = false;
+            return;
+        }
+
+        GameManager.Instance.UnlockPlayerMove();
+        _didLockPlayerMove = false;
     }
 }

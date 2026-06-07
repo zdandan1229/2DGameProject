@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -48,14 +47,14 @@ public static class InteractionOptionFactory
                 continue;
             }
 
-            if (Enum.TryParse(optionData.ActionType, out InteractionActionType actionType) == false)
+            if (GameUtil.TryParseEnumText(optionData.ActionType, out InteractionActionType actionType) == false)
             {
                 Debug.LogWarning($"InteractionOption has an invalid ActionType. id: {optionDataId}, ActionType: {optionData.ActionType}");
                 continue;
             }
 
-            InteractionOption interactionOption = new InteractionOption(optionData.ButtonText, actionType, optionData.TargetDataId);
-            if (interactionOption.IsValid() == false)
+            InteractionOption interactionOption = new InteractionOption(optionData.ButtonText, actionType);
+            if (interactionOption.IsExecutable() == false)
             {
                 Debug.LogWarning($"InteractionOption is invalid and will be skipped: {optionDataId}");
                 continue;

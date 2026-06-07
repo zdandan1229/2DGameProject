@@ -73,7 +73,7 @@ public class InteractionMenuButton : MonoBehaviour
             return;
         }
 
-        if (_interactionOption.IsValid() == false)
+        if (_interactionOption.CanShowInMenu() == false)
         {
             Debug.LogWarning($"{gameObject.name}의 상호작용 옵션이 올바르지 않습니다.");
             return;

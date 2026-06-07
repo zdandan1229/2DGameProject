@@ -9,109 +9,122 @@ public enum UIRootType
     MainUI,
     ContentUI,
     PopupUI,
-    VeryFrontUI
+    VeryFrontUI,
+    ScreenTransitionUIRoot
 }
 
 public enum UIType
 {
-    MainUI,
-    MyProfilePopup, // 신규UI추가 1) 새로운 UIType을 추가한다
     Inventory,
-    LoadingUI,
     DialogueUI,
     InspectObjectUI,
-    SJDialogueUI,
-    InfoBookUI,
-    ClearPopup,
-    InteractionMenuUI
+    InteractionMenuUI,
+    MiniMapUI,
+    PlayerMenuUI,
+    ScreenTransitionUI,
+    CustomCursorUI,
+    PopupTextUI,
+    TitleUI,
+    FirstGameStartUI,
+    LoadingUI,
+    NPCStatusUI
 }
 
 public static class UIManagerExtension
 {
     public static string GetUIPath(this UIManager uiManager, UIRootType uiRootType, UIType uiType)
     {
-        string path = string.Empty; // "" == string.Empty
+        if (uiRootType == UIRootType.ScreenTransitionUIRoot && uiType == UIType.ScreenTransitionUI)
+        {
+            return $"Prefabs/UI/{UIRootType.VeryFrontUI}/{uiType}";
+        }
 
-        // 신규UI추가 2) Resources.Load를 할 경로를 직접 명시한다
-        // 해당 경로는 프로젝트창에서 Resources/Prefabs/UI폴더 내에 있는 RootType 폴더명과 UIType 프리팹 이름과 동일해야 한다! (ex. ContentUI/MyProfilePopup)
-        path = $"Prefabs/UI/{uiRootType}/{uiType}";
-        return path;
+        return $"Prefabs/UI/{uiRootType}/{uiType}";
     }
 
-    public static void ShowStartupUIOnGameStart(this UIManager uiManager)
+    public static TitleUI OpenTitleUI(this UIManager uiManager)
     {
-        // 테스트 단계에서는 시작 UI 프리팹이 아직 없어 null Instantiate 오류가 나므로 잠시 막아둔다.
-        // uiManager.OpenLoadingUI();
-        // uiManager.OpenUI(UIRootType.MainUI, UIType.MainUI);
-        // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
-        // MainUI도
-    }
-
-    // 신규UI추가 3) 이렇게 어떤 팝업을 열고, 열때 전달해야하는 파라미터가 있다면 이렇게 전달한다.
-    // 추가하기 편하게 그냥 빼둔 확장 메서드이므로, uiManager과 this는 우선 넘어가자
-    public static void OpenMyProfilePopup(this UIManager uiManager, string characterDataId)
-    {
-        // 신규UI추가 4) 이렇게 UI 타입을 던져서 UI 생성을 요청한다
-        var uiBase = uiManager.OpenPopupUI(UIType.MyProfilePopup);
+        var uiBase = uiManager.OpenUI(UIRootType.MainUI, UIType.TitleUI);
         if (uiBase == null)
         {
-            Debug.LogWarning($"UI가 생성되지 않았습니다");
-            return;
+            Debug.LogWarning("TitleUI를 생성하지 못했습니다.");
+            return null;
         }
+
+        if (uiBase is TitleUI titleUI)
+        {
+            return titleUI;
+        }
+
+        Debug.LogWarning("생성된 UI가 TitleUI 타입이 아닙니다.");
+        return null;
     }
 
-    public static void OpenInventoryPopup(this UIManager uiManger)
+    public static void CloseTitleUI(this UIManager uiManager)
     {
-        uiManger.OpenInventoryPopup(string.Empty);
+        uiManager.CloseUI(UIRootType.MainUI, UIType.TitleUI);
     }
 
-    public static void OpenInventoryPopup(this UIManager uiManger, string selectedInspectObjectDataId)
+    public static FirstGameStartUI OpenFirstGameStartUI(this UIManager uiManager)
     {
-        var uiBase = uiManger.OpenContentUI(UIType.Inventory);
+        var uiBase = uiManager.OpenPopupUI(UIType.FirstGameStartUI);
         if (uiBase == null)
         {
-            Debug.LogWarning($"UI가 생성되지 않았습니다");
-            return;
+            Debug.LogWarning("FirstGameStartUI를 생성하지 못했습니다.");
+            return null;
         }
 
-        if (uiBase is InventoryUI inventoryUI)
+        if (uiBase is FirstGameStartUI firstGameStartUI)
         {
-            if (InventoryManager.Instance == null)
-            {
-                Debug.LogWarning("InventoryManager.Instance가 존재하지 않아 인벤토리 목록을 갱신할 수 없습니다.");
-                inventoryUI.RefreshInventory(new List<string>());
-                RestoreInventorySelection(inventoryUI, selectedInspectObjectDataId);
-                return;
-            }
-
-            inventoryUI.RefreshInventory(InventoryManager.Instance.GetInspectObjectDataIdList());
-            RestoreInventorySelection(inventoryUI, selectedInspectObjectDataId);
+            return firstGameStartUI;
         }
+
+        Debug.LogWarning("생성된 UI가 FirstGameStartUI 타입이 아닙니다.");
+        return null;
     }
 
-    private static void RestoreInventorySelection(InventoryUI inventoryUI, string selectedInspectObjectDataId)
+    public static void CloseFirstGameStartUI(this UIManager uiManager)
     {
-        if (inventoryUI == null || string.IsNullOrEmpty(selectedInspectObjectDataId))
-        {
-            return;
-        }
-
-        inventoryUI.SelectInspectObject(selectedInspectObjectDataId);
+        uiManager.ClosePopupUI(UIType.FirstGameStartUI);
     }
 
-    public static void OpenLoadingUI(this UIManager uiManager)
+    public static LoadingUI OpenLoadingUI(this UIManager uiManager)
     {
         var uiBase = uiManager.OpenUI(UIRootType.VeryFrontUI, UIType.LoadingUI);
         if (uiBase == null)
         {
-            Debug.LogWarning($"UI가 생성되지 않았습니다");
-            return;
+            Debug.LogWarning("LoadingUI를 생성하지 못했습니다.");
+            return null;
         }
+
+        if (uiBase is LoadingUI loadingUI)
+        {
+            return loadingUI;
+        }
+
+        Debug.LogWarning("생성된 UI가 LoadingUI 타입이 아닙니다.");
+        return null;
     }
 
     public static void CloseLoadingUI(this UIManager uiManager)
     {
         uiManager.CloseUI(UIRootType.VeryFrontUI, UIType.LoadingUI);
+    }
+
+    public static void OpenInventoryPopup(this UIManager uiManager)
+    {
+        uiManager.OpenInventoryPopup(string.Empty);
+    }
+
+    public static void OpenInventoryPopup(this UIManager uiManager, string selectedInspectObjectDataId)
+    {
+        PlayerMenuUI playerMenuUI = uiManager.OpenPlayerMenuUI();
+        if (playerMenuUI == null)
+        {
+            return;
+        }
+
+        playerMenuUI.OpenInventoryTab(selectedInspectObjectDataId);
     }
 
     public static void OpenDialogueUI(this UIManager uiManager, string startDialogueId)
@@ -121,17 +134,25 @@ public static class UIManagerExtension
 
     public static void OpenDialogueUI(this UIManager uiManager, string startDialogueId, string objectName)
     {
+        uiManager.OpenDialogueUI(startDialogueId, objectName, null);
+    }
+
+    public static void OpenDialogueUI(this UIManager uiManager, string startDialogueId, string objectName, Action onCompleteCallback)
+    {
         var uiBase = uiManager.OpenContentUI(UIType.DialogueUI);
         if (uiBase == null)
         {
-            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            Debug.LogWarning("DialogueUI가 생성되지 않았습니다.");
             return;
         }
 
         if (uiBase is DialogueUI dialogueUi)
         {
-            dialogueUi.StartDialogue(startDialogueId, objectName);
+            dialogueUi.StartDialogue(startDialogueId, objectName, onCompleteCallback);
+            return;
         }
+
+        Debug.LogWarning("생성된 UI가 DialogueUI 타입이 아닙니다.");
     }
 
     public static void OpenInspectObjectUI(this UIManager uiManager)
@@ -140,7 +161,6 @@ public static class UIManagerExtension
         if (uiBase == null)
         {
             Debug.LogWarning("InspectObjectUI가 생성되지 않았습니다.");
-            return;
         }
     }
 
@@ -156,7 +176,10 @@ public static class UIManagerExtension
         if (uiBase is InspectObjectUI inspectObjectUI)
         {
             inspectObjectUI.StartInspectObject(objectPrefab, description);
+            return;
         }
+
+        Debug.LogWarning("생성된 UI가 InspectObjectUI 타입이 아닙니다.");
     }
 
     public static void OpenInspectObjectUI(this UIManager uiManager, string inspectObjectDataId)
@@ -176,7 +199,10 @@ public static class UIManagerExtension
         if (uiBase is InspectObjectUI inspectObjectUI)
         {
             inspectObjectUI.StartInspectObjectFromInventory(inspectObjectDataId);
+            return;
         }
+
+        Debug.LogWarning("생성된 UI가 InspectObjectUI 타입이 아닙니다.");
     }
 
     public static void OpenInspectObjectUI(this UIManager uiManager, string inspectObjectDataId, IInspectObjectCompleteHandler completeHandler)
@@ -191,32 +217,87 @@ public static class UIManagerExtension
         if (uiBase is InspectObjectUI inspectObjectUI)
         {
             inspectObjectUI.StartInspectObject(inspectObjectDataId, completeHandler);
-        }
-    }
-
-    public static void OpenSJDialogueUI(this UIManager uiManager, string startDialogueId)
-    {
-        var uiBase = uiManager.OpenContentUI(UIType.SJDialogueUI);
-        if (uiBase == null)
-        {
-            Debug.LogWarning($"UI가 생성되지 않았습니다");
             return;
         }
 
-        if (uiBase is DialogueUI dialogueUi)
-        {
-            dialogueUi.StartDialogue(startDialogueId);
-        }
+        Debug.LogWarning("생성된 UI가 InspectObjectUI 타입이 아닙니다.");
     }
 
-    public static void OpenClearPopup(this UIManager uiManager, Vector3 worldPosition)
+    public static void OpenInspectAreaUI(this UIManager uiManager, string inspectAreaDataId)
     {
-        var uiBase = uiManager.OpenUI(UIRootType.MainUI, UIType.ClearPopup);
+        var uiBase = uiManager.OpenContentUI(UIType.InspectObjectUI);
         if (uiBase == null)
         {
-            Debug.LogWarning("ClearPopup이 생성되지 않았습니다");
+            Debug.LogWarning("InspectObjectUI가 생성되지 않았습니다.");
             return;
         }
+
+        if (uiBase is InspectObjectUI inspectObjectUI)
+        {
+            inspectObjectUI.StartInspectArea(inspectAreaDataId);
+            return;
+        }
+
+        Debug.LogWarning("생성된 UI가 InspectObjectUI 타입이 아닙니다.");
+    }
+
+    public static void OpenJournalInspectUI(this UIManager uiManager, string journalDataId, IJournalInspectCompleteHandler completeHandler)
+    {
+        var uiBase = uiManager.OpenContentUI(UIType.InspectObjectUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("InspectObjectUI가 생성되지 않았습니다.");
+            return;
+        }
+
+        if (uiBase is InspectObjectUI inspectObjectUI)
+        {
+            inspectObjectUI.StartJournalInspect(journalDataId, completeHandler);
+            return;
+        }
+
+        Debug.LogWarning("생성된 UI가 InspectObjectUI 타입이 아닙니다.");
+    }
+
+    public static void OpenJournalTab(this UIManager uiManager, string journalDataId, string noticeMessage)
+    {
+        PlayerMenuUI playerMenuUI = uiManager.OpenPlayerMenuUI();
+        if (playerMenuUI == null)
+        {
+            return;
+        }
+
+        playerMenuUI.OpenJournalTab(journalDataId, noticeMessage);
+    }
+
+    public static NPCStatusUI OpenNPCStatusUI(this UIManager uiManager, string characterDataId)
+    {
+        if (string.IsNullOrEmpty(characterDataId))
+        {
+            Debug.LogWarning("NPCStatusUI를 열 캐릭터 데이터 ID가 비어 있습니다.");
+            return null;
+        }
+
+        var uiBase = uiManager.OpenContentUI(UIType.NPCStatusUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("NPCStatusUI가 생성되지 않았습니다.");
+            return null;
+        }
+
+        if (uiBase is NPCStatusUI npcStatusUI)
+        {
+            npcStatusUI.OpenCharacterStatus(characterDataId);
+            return npcStatusUI;
+        }
+
+        Debug.LogWarning("생성된 UI가 NPCStatusUI 타입이 아닙니다.");
+        return null;
+    }
+
+    public static void CloseNPCStatusUI(this UIManager uiManager)
+    {
+        uiManager.CloseContentUI(UIType.NPCStatusUI);
     }
 
     public static InteractionMenuUI OpenInteractionMenuUI(this UIManager uiManager, List<InteractionOption> optionList, Vector3 worldPosition, Action<InteractionOption> onClickOptionCallback)
@@ -238,6 +319,25 @@ public static class UIManagerExtension
         return null;
     }
 
+    public static InteractionMenuUI OpenInteractionMenuUIWithoutMoveLock(this UIManager uiManager, List<InteractionOption> optionList, Transform followTarget, Vector3 followWorldOffset, Vector3 followWorldOffsetWhenNearRightEdge, float followRightEdgeViewportLine, Action<InteractionOption> onClickOptionCallback)
+    {
+        var uiBase = uiManager.OpenUI(UIRootType.MainUI, UIType.InteractionMenuUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("InteractionMenuUI could not be created.");
+            return null;
+        }
+
+        if (uiBase is InteractionMenuUI interactionMenuUI)
+        {
+            interactionMenuUI.OpenFollowMenuWithoutMoveLock(optionList, followTarget, followWorldOffset, followWorldOffsetWhenNearRightEdge, followRightEdgeViewportLine, onClickOptionCallback);
+            return interactionMenuUI;
+        }
+
+        Debug.LogWarning("Created UI is not InteractionMenuUI.");
+        return null;
+    }
+
     public static void CloseInteractionMenuUI(this UIManager uiManager)
     {
         var uiBase = uiManager.FindCreatedUI(UIType.InteractionMenuUI);
@@ -247,5 +347,126 @@ public static class UIManagerExtension
         }
 
         uiManager.CloseUI(UIRootType.MainUI, UIType.InteractionMenuUI);
+    }
+
+    public static MiniMapUI OpenMiniMapUI(this UIManager uiManager)
+    {
+        PlayerMenuUI playerMenuUI = uiManager.OpenPlayerMenuUI();
+        if (playerMenuUI == null)
+        {
+            return null;
+        }
+
+        playerMenuUI.OpenMiniMapTab();
+        return null;
+    }
+
+    public static void CloseMiniMapUI(this UIManager uiManager)
+    {
+        uiManager.ClosePlayerMenuUI();
+    }
+
+    public static PlayerMenuUI OpenPlayerMenuUI(this UIManager uiManager)
+    {
+        var uiBase = uiManager.OpenContentUI(UIType.PlayerMenuUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("PlayerMenuUI가 생성되지 않았습니다.");
+            return null;
+        }
+
+        if (uiBase is PlayerMenuUI playerMenuUI)
+        {
+            return playerMenuUI;
+        }
+
+        Debug.LogWarning("생성된 UI가 PlayerMenuUI 타입이 아닙니다.");
+        return null;
+    }
+
+    public static void ClosePlayerMenuUI(this UIManager uiManager)
+    {
+        uiManager.CloseContentUI(UIType.PlayerMenuUI);
+    }
+
+    public static ScreenTransitionUI OpenScreenTransitionUI(this UIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(UIRootType.ScreenTransitionUIRoot, UIType.ScreenTransitionUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("ScreenTransitionUI could not be created.");
+            return null;
+        }
+
+        if (uiBase is ScreenTransitionUI screenTransitionUI)
+        {
+            screenTransitionUI.gameObject.SetActive(true);
+            screenTransitionUI.transform.SetAsLastSibling();
+            return screenTransitionUI;
+        }
+
+        Debug.LogWarning("Created UI is not ScreenTransitionUI.");
+        return null;
+    }
+
+    public static PopupTextUI OpenPopupTextUI(this UIManager uiManager, string popupTextDataId)
+    {
+        if (string.IsNullOrEmpty(popupTextDataId))
+        {
+            Debug.LogWarning("PopupText data id is empty, so PopupTextUI cannot be opened.");
+            return null;
+        }
+
+        if (GameDataManager.Instance == null)
+        {
+            Debug.LogWarning("GameDataManager.Instance is missing, so PopupTextUI cannot load text data.");
+            return null;
+        }
+
+        PopupTextData popupTextData = GameDataManager.Instance.GetPopupTextData(popupTextDataId);
+        if (popupTextData == null)
+        {
+            Debug.LogWarning($"PopupText data was not found: {popupTextDataId}");
+            return null;
+        }
+
+        return uiManager.OpenPopupTextUIWithText(popupTextData.Description);
+    }
+
+    private static PopupTextUI OpenPopupTextUIWithText(this UIManager uiManager, string popupText)
+    {
+        var uiBase = uiManager.OpenPopupUI(UIType.PopupTextUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("PopupTextUI가 생성되지 않았습니다.");
+            return null;
+        }
+
+        if (uiBase is PopupTextUI popupTextUI)
+        {
+            popupTextUI.ShowPopupText(popupText);
+            return popupTextUI;
+        }
+
+        Debug.LogWarning("생성된 UI가 PopupTextUI 타입이 아닙니다.");
+        return null;
+    }
+
+    public static CustomCursorUI OpenCustomCursorUI(this UIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(UIRootType.VeryFrontUI, UIType.CustomCursorUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("CustomCursorUI could not be created.");
+            return null;
+        }
+
+        if (uiBase is CustomCursorUI customCursorUI)
+        {
+            return customCursorUI;
+        }
+
+        Debug.LogWarning("Created UI is not CustomCursorUI.");
+        return null;
     }
 }

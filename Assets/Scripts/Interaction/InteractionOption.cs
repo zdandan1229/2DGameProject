@@ -6,8 +6,11 @@ public enum InteractionActionType
     OpenDialogue,
     OpenStatus,
     OpenInspectObject,
+    OpenInspectArea,
+    OpenJournal,
+    ShowPopupText,
     PickupItem,
-    EnterDoor,
+    EnterStage,
     ExitMenu
 }
 
@@ -16,7 +19,6 @@ public class InteractionOption
 {
     private string _buttonText;
     private InteractionActionType _actionType;
-    private string _targetDataId;
 
     public string ButtonText
     {
@@ -28,30 +30,34 @@ public class InteractionOption
         get { return _actionType; }
     }
 
-    public string TargetDataId
-    {
-        get { return _targetDataId; }
-    }
-
-    public InteractionOption(string buttonText, InteractionActionType actionType, string targetDataId)
+    public InteractionOption(string buttonText, InteractionActionType actionType)
     {
         _buttonText = buttonText;
         _actionType = actionType;
-        _targetDataId = targetDataId;
     }
 
     public bool IsValid()
     {
-        if (string.IsNullOrEmpty(_buttonText))
-        {
-            return false;
-        }
+        return IsExecutable();
+    }
 
+    public bool IsExecutable()
+    {
         if (_actionType == InteractionActionType.None)
         {
             return false;
         }
 
         return true;
+    }
+
+    public bool CanShowInMenu()
+    {
+        return IsExecutable() && string.IsNullOrEmpty(_buttonText) == false;
+    }
+
+    public bool ShouldExecuteDirectly()
+    {
+        return IsExecutable() && string.IsNullOrEmpty(_buttonText);
     }
 }
