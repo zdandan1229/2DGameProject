@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCDialogueTrigger : MonoBehaviour, IInteractable, IInteractionOptionProvider
+public class NPCDialogueTrigger : MonoBehaviour, IInteractable, IInteractionOptionProvider, IInteractionObjectDataProvider, IInteractionTargetDataProvider
 {
     [SerializeField] private string _interactionObjectDataId;
-    [SerializeField] private string _startDialogueId;
     [SerializeField] private float _interactionDistance = 1.5f;
 
     public Transform InteractionTransform
@@ -24,25 +23,58 @@ public class NPCDialogueTrigger : MonoBehaviour, IInteractable, IInteractionOpti
 
     public List<InteractionOption> GetInteractionOptions()
     {
-        List<InteractionOption> optionList = InteractionOptionFactory.CreateOptionList(_interactionObjectDataId);
-        if (optionList.Count > 0)
+        return InteractionOptionFactory.CreateOptionList(_interactionObjectDataId);
+    }
+
+    public InteractionObjectData GetInteractionObjectData()
+    {
+        if (GameDataManager.Instance == null)
         {
-            return optionList;
+            Debug.LogWarning("GameDataManager.Instance is missing, so interaction object data cannot be loaded.");
+            return null;
         }
 
-        if (string.IsNullOrEmpty(_startDialogueId))
+        if (string.IsNullOrEmpty(_interactionObjectDataId))
         {
-            Debug.LogWarning($"{gameObject.name} has no dialogue id, so a fallback dialogue option cannot be created.");
-            return optionList;
+            return null;
         }
 
-        optionList.Add(new InteractionOption("\uB300\uD654\uD558\uAE30", InteractionActionType.OpenDialogue, _startDialogueId));
-        return optionList;
+        return GameDataManager.Instance.GetInteractionObjectData(_interactionObjectDataId);
+    }
+
+    public string GetInteractionTargetDataId(InteractionActionType actionType)
+    {
+        InteractionObjectData interactionObjectData = GetInteractionObjectData();
+        if (interactionObjectData == null)
+        {
+            Debug.LogWarning($"{gameObject.name} has no interaction object data.");
+            return string.Empty;
+        }
+
+        if (actionType == InteractionActionType.OpenStatus)
+        {
+            if (string.IsNullOrEmpty(interactionObjectData.CharacterDataId))
+            {
+                Debug.LogWarning($"{interactionObjectData.Id} has no CharacterDataId.");
+                return string.Empty;
+            }
+
+            return interactionObjectData.CharacterDataId;
+        }
+
+        if (actionType != InteractionActionType.OpenDialogue)
+        {
+            return string.Empty;
+        }
+
+        return GetCurrentDialogueDataId(interactionObjectData);
     }
 
     public void Interact()
     {
-        if (string.IsNullOrEmpty(_startDialogueId))
+        InteractionObjectData interactionObjectData = GetInteractionObjectData();
+        string dialogueDataId = GetCurrentDialogueDataId(interactionObjectData);
+        if (string.IsNullOrEmpty(dialogueDataId))
         {
             Debug.LogWarning($"{gameObject.name} has no dialogue id.");
             return;
@@ -59,6 +91,65 @@ public class NPCDialogueTrigger : MonoBehaviour, IInteractable, IInteractionOpti
             return;
         }
 
-        UIManager.Instance.OpenDialogueUI(_startDialogueId);
+        UIManager.Instance.OpenDialogueUI(dialogueDataId, string.Empty, () => MarkDialogueCompleteFlag(interactionObjectData));
+    }
+
+    private string GetCurrentDialogueDataId()
+    {
+        return GetCurrentDialogueDataId(GetInteractionObjectData());
+    }
+
+    private string GetCurrentDialogueDataId(InteractionObjectData interactionObjectData)
+    {
+        if (interactionObjectData == null)
+        {
+            Debug.LogWarning($"{gameObject.name} has no interaction object data.");
+            return string.Empty;
+        }
+
+        bool isFirstDialogueComplete = IsDialogueComplete(interactionObjectData);
+        if (isFirstDialogueComplete && string.IsNullOrEmpty(interactionObjectData.RepeatDialogueDataId) == false)
+        {
+            return interactionObjectData.RepeatDialogueDataId;
+        }
+
+        if (string.IsNullOrEmpty(interactionObjectData.DialogueDataId))
+        {
+            Debug.LogWarning($"{interactionObjectData.Id} has no DialogueDataId.");
+            return string.Empty;
+        }
+
+        return interactionObjectData.DialogueDataId;
+    }
+
+    private bool IsDialogueComplete(InteractionObjectData interactionObjectData)
+    {
+        if (interactionObjectData == null || string.IsNullOrEmpty(interactionObjectData.DialogueCompleteFlagId))
+        {
+            return false;
+        }
+
+        if (ScenarioManager.Instance == null)
+        {
+            return false;
+        }
+
+        return ScenarioManager.Instance.HasFlag(interactionObjectData.DialogueCompleteFlagId);
+    }
+
+    private void MarkDialogueCompleteFlag(InteractionObjectData interactionObjectData)
+    {
+        if (interactionObjectData == null || string.IsNullOrEmpty(interactionObjectData.DialogueCompleteFlagId))
+        {
+            return;
+        }
+
+        if (ScenarioManager.Instance == null)
+        {
+            Debug.LogWarning("ScenarioManager.Instance가 없어 대화 완료 플래그를 기록할 수 없습니다.");
+            return;
+        }
+
+        ScenarioManager.Instance.MarkFlag(interactionObjectData.DialogueCompleteFlagId);
     }
 }

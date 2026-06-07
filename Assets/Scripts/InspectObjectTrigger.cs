@@ -1,10 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class InspectObjectTrigger : MonoBehaviour, IInteractable, IInteractionOptionProvider, IInspectObjectCompleteHandler
+public class InspectObjectTrigger : MonoBehaviour, IInteractable, IInteractionOptionProvider, IInteractionObjectDataProvider, IInteractionTargetDataProvider, IInspectObjectCompleteHandler, IInspectObjectCompleteOptionProvider
 {
     [SerializeField] private string _interactionObjectDataId;
-    [SerializeField] private string _inspectObjectDataId;
+    [SerializeField] private string _completeFlagId;
+    [SerializeField] private bool _showCompleteDialogue = true;
     [SerializeField] private float _interactionDistance = 1.5f;
 
     public Transform InteractionTransform
@@ -24,25 +25,44 @@ public class InspectObjectTrigger : MonoBehaviour, IInteractable, IInteractionOp
 
     public List<InteractionOption> GetInteractionOptions()
     {
-        List<InteractionOption> optionList = InteractionOptionFactory.CreateOptionList(_interactionObjectDataId);
-        if (optionList.Count > 0)
+        return InteractionOptionFactory.CreateOptionList(_interactionObjectDataId);
+    }
+
+    public InteractionObjectData GetInteractionObjectData()
+    {
+        if (GameDataManager.Instance == null)
         {
-            return optionList;
+            Debug.LogWarning("GameDataManager.Instance is missing, so interaction object data cannot be loaded.");
+            return null;
         }
 
-        if (string.IsNullOrEmpty(_inspectObjectDataId))
+        if (string.IsNullOrEmpty(_interactionObjectDataId))
         {
-            Debug.LogWarning($"{gameObject.name} has no inspect object id, so a fallback inspect option cannot be created.");
-            return optionList;
+            return null;
         }
 
-        optionList.Add(new InteractionOption("\uC870\uC0AC\uD558\uAE30", InteractionActionType.OpenInspectObject, _inspectObjectDataId));
-        return optionList;
+        return GameDataManager.Instance.GetInteractionObjectData(_interactionObjectDataId);
+    }
+
+    public string GetInteractionTargetDataId(InteractionActionType actionType)
+    {
+        if (actionType == InteractionActionType.OpenInspectObject)
+        {
+            return GetCurrentInspectObjectDataId();
+        }
+
+        if (actionType == InteractionActionType.OpenInspectArea)
+        {
+            return GetCurrentInspectAreaDataId();
+        }
+
+        return string.Empty;
     }
 
     public void Interact()
     {
-        if (string.IsNullOrEmpty(_inspectObjectDataId))
+        string inspectObjectDataId = GetCurrentInspectObjectDataId();
+        if (string.IsNullOrEmpty(inspectObjectDataId))
         {
             Debug.LogWarning($"{gameObject.name} has no inspect object id.");
             return;
@@ -59,35 +79,77 @@ public class InspectObjectTrigger : MonoBehaviour, IInteractable, IInteractionOp
             return;
         }
 
-        UIManager.Instance.OpenInspectObjectUI(_inspectObjectDataId, this);
+        UIManager.Instance.OpenInspectObjectUI(inspectObjectDataId, this);
     }
 
-    public void CompleteInspectObject(string inspectObjectDataId)
+    public bool CompleteInspectObject(string inspectObjectDataId)
     {
         if (string.IsNullOrEmpty(inspectObjectDataId))
         {
             Debug.LogWarning($"{gameObject.name}의 완료 처리할 조사 오브젝트 ID가 비어 있습니다.");
-            return;
+            return false;
         }
 
-        if (inspectObjectDataId != _inspectObjectDataId)
+        string expectedInspectObjectDataId = GetCurrentInspectObjectDataId();
+        if (string.IsNullOrEmpty(expectedInspectObjectDataId))
         {
-            Debug.LogWarning($"{gameObject.name}의 조사 오브젝트 ID가 일치하지 않습니다. 예상 ID : {_inspectObjectDataId}, 전달 ID : {inspectObjectDataId}");
-            return;
+            Debug.LogWarning($"{gameObject.name}의 기준 조사 오브젝트 ID가 비어 있습니다.");
+            return false;
         }
 
-        if (InventoryManager.Instance == null)
+        if (inspectObjectDataId != expectedInspectObjectDataId)
         {
-            Debug.LogWarning("InventoryManager.Instance가 존재하지 않아 조사 오브젝트를 소지품에 추가할 수 없습니다.");
-            return;
+            Debug.LogWarning($"{gameObject.name}의 조사 오브젝트 ID가 일치하지 않습니다. 예상 ID : {expectedInspectObjectDataId}, 전달 ID : {inspectObjectDataId}");
+            return false;
         }
 
-        bool isAdded = InventoryManager.Instance.AddInspectObject(inspectObjectDataId);
-        if (isAdded == false && InventoryManager.Instance.HasInspectObject(inspectObjectDataId) == false)
-        {
-            return;
-        }
-
+        MarkCompleteFlag();
         gameObject.SetActive(false);
+        return true;
+    }
+
+    public bool ShouldOpenCompleteDialogue()
+    {
+        return _showCompleteDialogue;
+    }
+
+    private void MarkCompleteFlag()
+    {
+        if (string.IsNullOrEmpty(_completeFlagId))
+        {
+            return;
+        }
+
+        if (ScenarioManager.Instance == null)
+        {
+            Debug.LogWarning($"{gameObject.name}의 조사 완료 플래그를 기록할 ScenarioManager.Instance가 없습니다.");
+            return;
+        }
+
+        ScenarioManager.Instance.MarkFlag(_completeFlagId);
+    }
+
+    private string GetCurrentInspectObjectDataId()
+    {
+        InteractionObjectData objectData = GetInteractionObjectData();
+        if (objectData != null && string.IsNullOrEmpty(objectData.InspectObjectDataId) == false)
+        {
+            return objectData.InspectObjectDataId;
+        }
+
+        Debug.LogWarning($"{gameObject.name} has no InspectObjectDataId in InteractionObjectData.");
+        return string.Empty;
+    }
+
+    private string GetCurrentInspectAreaDataId()
+    {
+        InteractionObjectData objectData = GetInteractionObjectData();
+        if (objectData != null && string.IsNullOrEmpty(objectData.InspectAreaDataId) == false)
+        {
+            return objectData.InspectAreaDataId;
+        }
+
+        Debug.LogWarning($"{gameObject.name} has no InspectAreaDataId in InteractionObjectData.");
+        return string.Empty;
     }
 }
