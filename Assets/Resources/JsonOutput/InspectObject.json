@@ -1,9 +1,32 @@
 [
   {
-    "Id": "inspect_test_note",
-    "Name": "피가 묻은 노트",
-    "Description": "뭔가가 적혀 있는 노트이다. 조사해보자.",
-    "PrefabPath": "Prefabs/InspectObjects/Object_Note",
-    "StartInspectTextId": "inspect_note_start"
+    "Id": "inspectobject_brokenframe",
+    "Name": "깨진 액자",
+    "Description": "선임 연구원들의 단체 사진이다.\n그 사건이 일어나기 전까진 분위기가 좋았던 듯하다.",
+    "PrefabPath": "Prefabs/InspectObjects/Object_BrokenFrame",
+    "StartInspectTextId": "inspect_brokenframe_start",
+    "CompleteRewardType": null,
+    "CompleteInspectDescription": null,
+    "IconPath": "Icons/Icon_BrokenFrame"
+  },
+  {
+    "Id": "inspectobject_mapprint",
+    "Name": "연구소 지도",
+    "Description": null,
+    "PrefabPath": "Prefabs/InspectObjects/Object_MapPrint",
+    "StartInspectTextId": "inspect_mapprint_start",
+    "CompleteRewardType": "None",
+    "CompleteInspectDescription": "연구소의 구조를 자세히 확인했다.\n이제 M키를 눌러 미니맵을 볼 수 있다.",
+    "IconPath": null
+  },
+  {
+    "Id": "inspectobject_idcard",
+    "Name": "ID카드",
+    "Description": "수석 연구원에게 지급하는 ID카드다.\n이 카드로 연구소 대부분의 시설에 출입 수 있다.",
+    "PrefabPath": "Prefabs/InspectObjects/Object_IDCard",
+    "StartInspectTextId": "inspect_idcard_start",
+    "CompleteRewardType": null,
+    "CompleteInspectDescription": null,
+    "IconPath": "Icons/Icon_IDCard"
   }
 ]

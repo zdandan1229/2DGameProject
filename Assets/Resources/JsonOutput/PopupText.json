@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "text_manquarters_cabinet01",
+    "Description": "캐비닛 안은 텅 비어 있다."
+  },
+  {
+    "Id": "text_manquarters_backpack",
+    "Description": "내가 가져온 가방이다."
+  },
+  {
+    "Id": "text_manquarters_timetable",
+    "Description": "연구 일정표가 적혀 있다."
+  },
+  {
+    "Id": "text_manquarters_clothes",
+    "Description": "여분의 연구복이다."
+  },
+  {
+    "Id": "text_manquarters_posterremovedtrace",
+    "Description": "뭔가를 떼어낸 자국이다."
+  },
+  {
+    "Id": "text_entrance_lockeddoor",
+    "Description": "카드 키를 입력해야 열 수 있다."
+  },
+  {
+    "Id": "text_helipad_oceanview",
+    "Description": "끝없이 펼쳐진 바다밖에 보이지 않는다."
+  },
+  {
+    "Id": "text_helipad_helipad",
+    "Description": "헬기는 떠났다. 이젠 여기서 나갈 수 없다."
+  },
+  {
+    "Id": "text_corridor_panel_manquarters",
+    "Description": "[남직원 숙소] 명찰이 달려 있다."
+  },
+  {
+    "Id": "text_corridor_panel_archiveroom",
+    "Description": "[자료 보관실] 명찰이 달려 있다."
+  },
+  {
+    "Id": "text_corridor_panel_laboratory",
+    "Description": "[연구실] 명찰이 달려 있다."
+  },
+  {
+    "Id": "text_corridor_panel_womanquarters",
+    "Description": "[여직원 숙소] 명찰이 달려 있다."
+  },
+  {
+    "Id": "text_corridor_panel_toilet",
+    "Description": "화장실이다. 지금은 들어가고 싶지 않다."
+  },
+  {
+    "Id": "text_corridor_door_cafeteria",
+    "Description": "식당이다. 지금은 문이 닫혀 있다."
+  }
+]

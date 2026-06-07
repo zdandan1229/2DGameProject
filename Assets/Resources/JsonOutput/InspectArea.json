@@ -1,0 +1,12 @@
+[
+  {
+    "Id": "inspectarea_manquarters_cabinet",
+    "Name": "캐비닛",
+    "PrefabPath": "Prefabs/InspectObjects/Area_Manquarters_Cabinet"
+  },
+  {
+    "Id": "inspectarea_manquarters_noticeboard",
+    "Name": "알림판",
+    "PrefabPath": "Prefabs/InspectObjects/Area_Manquarters_NoticeBoard"
+  }
+]

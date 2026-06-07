@@ -1,9 +1,47 @@
 [
   {
-    "Id": "char_testNPC",
-    "Name": "NPC",
-    "PortraitPath": "Sprites/portraitnormal",
-    "PrefabPath": "Prefabs/testNPC",
-    "Description": "테스트용 NPC이다."
+    "Id": "char_girl",
+    "Name": "윤하린",
+    "PortraitPath": "Portraits/Girl_Portrait_Default|Profile",
+    "PrefabPath": "Prefabs/NPCs/NPC_Girl",
+    "CharacterFileData1": "변이체의 폭주에서 살아남은 유일한 연구원.\n사건의 후유증 때문인지 말주변이 없고 사람을 두려워한다.\n낮에는 거의 숙소에 틀어박혀 있어서 저녁에 주로 볼 수 있다.\n그런 끔찍한 일을 겪고도 자진해서 연구를 계속하다니\n어쩌면 생각보다 멘탈이 좋은 사람인지도 모른다.",
+    "CharacterFileData2": "말주면이 없고 덜렁거리는 성격은 사건의 후유증 때문이 아니었다.\n그냥 원래부터 성격이 좀 그런 사람이었다...",
+    "CharacterFileData3": "사실 이 작품을 처음 구상할 때 하린이라는 캐릭터는 존재하지 않았다. 하지만 벌레 괴물과 대화하며 호감도 관리까지 해줘야 하는 비주얼노벨 게임에 여주인공 포지션의 캐릭터가 존재하지 않는다면 작품이 폭삭 망할 것 같아서 스토리를 게임용으로 재구성하면서 급하게 추가한 캐릭터다.",
+    "CharacterFileData4": null,
+    "DialoguePortraitDefault": "Portraits/Girl_Portrait_Default",
+    "DialoguePortraitHateDefault": "Portraits/Girl_Portrait_HateDefault",
+    "DialoguePortraitLikeDefault": "Portraits/Girl_Portrait_LikeDefault",
+    "DialoguePortraitSickDefault": "Portraits/Girl_Portrait_Default",
+    "DialoguePortraitMadnessDefault": "Portraits/Girl_Portrait_Default"
+  },
+  {
+    "Id": "char_pilot",
+    "Name": "군인",
+    "PortraitPath": null,
+    "PrefabPath": "Prefabs/NPCs/NPC_Pilot",
+    "CharacterFileData1": null,
+    "CharacterFileData2": null,
+    "CharacterFileData3": null,
+    "CharacterFileData4": null,
+    "DialoguePortraitDefault": "Portraits/Portrait_Pilot",
+    "DialoguePortraitHateDefault": null,
+    "DialoguePortraitLikeDefault": null,
+    "DialoguePortraitSickDefault": null,
+    "DialoguePortraitMadnessDefault": null
+  },
+  {
+    "Id": "char_creature",
+    "Name": "괴물",
+    "PortraitPath": null,
+    "PrefabPath": "Prefabs/NPCs/NPC_Creature",
+    "CharacterFileData1": null,
+    "CharacterFileData2": null,
+    "CharacterFileData3": null,
+    "CharacterFileData4": null,
+    "DialoguePortraitDefault": "Portraits/Creature_Portrait",
+    "DialoguePortraitHateDefault": null,
+    "DialoguePortraitLikeDefault": null,
+    "DialoguePortraitSickDefault": null,
+    "DialoguePortraitMadnessDefault": null
   }
 ]

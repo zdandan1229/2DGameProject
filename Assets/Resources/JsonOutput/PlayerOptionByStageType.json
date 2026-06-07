@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "stageoption_smallroom",
+    "StageType": "SmallRoom",
+    "PlayerScale": 0.45,
+    "MoveSpeed": 4.5
+  },
+  {
+    "Id": "stageoption_largeroom",
+    "StageType": "LargeRoom",
+    "PlayerScale": 0.3,
+    "MoveSpeed": 3
+  },
+  {
+    "Id": "stageoption_outside",
+    "StageType": "Outside",
+    "PlayerScale": 0.3,
+    "MoveSpeed": 3
+  },
+  {
+    "Id": "stageoption_corridor",
+    "StageType": "Corridor",
+    "PlayerScale": 0.4,
+    "MoveSpeed": 4
+  }
+]

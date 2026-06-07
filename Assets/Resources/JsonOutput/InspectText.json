@@ -1,14 +1,54 @@
 [
   {
-    "Id": "inspect_note_start",
-    "Description": "피가 묻어 있는 정체불명의 쪽지이다."
+    "Id": "inspect_brokenframe_start",
+    "Description": "연구원들의 사진 같은데... 완전히 부서져서 잘 보이지 않는다."
   },
   {
-    "Id": "inspect_note_description",
-    "Description": "어떤 내용이 적혀 있지만, 피 때문에 뒷부분을 알아볼 수 없다."
+    "Id": "inspect_brokenframe_harin",
+    "Description": "이 사람이 변이 사태의 유일한 생존자라고 들었는데, 아직 이 연구소에 남아 있는 걸까?"
   },
   {
-    "Id": "inspect_note_blood",
-    "Description": "노트의 피는 검게 말라붙어 있다. 흘린 지 오랜 시간이 지난 듯하다."
+    "Id": "inspect_brokenframe_others",
+    "Description": "다른 연구원들이다. 현재는 변이체로 인해 모두 사망했다."
+  },
+  {
+    "Id": "inspect_brokenframe_broken",
+    "Description": "연구원이 웃고 있는 듯한 모습이지만,\n말라붙은 혈흔과 깨진 파편 때문에 사진이 손상돼서 알아볼 수 없다."
+  },
+  {
+    "Id": "inspect_manquarters_cabinet_glassfragments",
+    "Description": "유리 파편이 흩어져 있다. 액자가 부서진 조각인가?"
+  },
+  {
+    "Id": "inspect_manquarters_noticeboard_dailytimetable",
+    "Description": "연구원들의 하루 일과가 적혀 있다."
+  },
+  {
+    "Id": "inspect_idcard_start",
+    "Description": "군인에게 지급받은 ID 카드다.\n카드에 마우스를 올려 조사할 수 있는 부분을 찾아보자."
+  },
+  {
+    "Id": "inspect_idcard_portrait",
+    "Description": "내 프로필 사진이다."
+  },
+  {
+    "Id": "inspect_idcard_projectname",
+    "Description": "Project DNAM. 'DNA MUTATION PROJECT'의 줄임말이다.<np>DNA를 조작해서 생체 병기를 만드는 프로젝트라니. 악취미가 따로 없군."
+  },
+  {
+    "Id": "inspect_idcard_nametag",
+    "Description": "한재혁. 내 이름이다. 이곳의 수석 연구원이자 프로젝트 책임자로 발령받았다.<np>...뭐 그래봤자 이곳에 실제로 근무하는 건 나밖에 없지만."
+  },
+  {
+    "Id": "inspect_idcard_barcode",
+    "Description": "이 바코드를 문의 단말에 태그하면 문이 열리는 구조로 되어 있다."
+  },
+  {
+    "Id": "inspect_manquarters_noticeboard_mapprint",
+    "Description": "연구소의 자세한 구조가 그려져 있는 지도다.<np>지도를 외워서 좀 더 편하게 돌아다닐 수 있다.\n제 M을 눌러 미니맵을 열고 이동할 수 있다."
+  },
+  {
+    "Id": "inspect_manquarters_noticeboard_experimentalrecord",
+    "Description": "DNA변이 바이러스의 실험 기록이다.<np>끔찍한 동물 실험 내용이 사진과 함께 적혀 있다."
   }
 ]

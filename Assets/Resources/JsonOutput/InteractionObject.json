@@ -1,32 +1,511 @@
 [
   {
-    "Id": "interaction_npc_test",
-    "Name": "테스트 NPC",
+    "Id": "interaction_decoobj_backpack",
+    "Name": "남직원 숙소 가방",
     "InteractionOptionIdList": [
-      "option_talk_test",
-      "option_status_test"
-    ]
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_manquarters_backpack",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_clothes",
+    "Name": "남직원 숙소 옷",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_manquarters_clothes",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_entrance_lockeddoor",
+    "Name": "연구소 입구 닫힌 문",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_entrance_lockeddoor",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_helipad",
+    "Name": "헬기 정류장",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_helipad_helipad",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_manquarterscabinet01",
+    "Name": "남직원 숙소 빈 캐비닛",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_manquarters_cabinet01",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_oceanview",
+    "Name": "헬기정류장 바다 풍경",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_helipad_oceanview",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_posterremovedtrace",
+    "Name": "남직원 숙소 포스터 자국",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_manquarters_posterremovedtrace",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_timetable",
+    "Name": "남직원 숙소 시간표",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_manquarters_timetable",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_door_manquarters_cardreader",
+    "Name": "남직원 숙소 카드키 단말",
+    "InteractionOptionIdList": [
+      "option_enterstage_in"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_journal_test",
+    "Name": "테스트용 저널",
+    "InteractionOptionIdList": [
+      "option_inspect_journal"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": "journal_test_01",
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
   },
   {
     "Id": "interaction_note_test",
     "Name": "피가 묻은 노트",
     "InteractionOptionIdList": [
-      "option_inspect_note"
-    ]
+      "option_inspect"
+    ],
+    "InspectObjectDataId": "inspect_test_note",
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
   },
   {
-    "Id": "interaction_door_room01",
-    "Name": "방 문",
+    "Id": "interaction_npc_test",
+    "Name": "테스트 NPC",
     "InteractionOptionIdList": [
-      "option_enter_room01"
-    ]
+      "option_talk",
+      "option_status"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
   },
   {
-    "Id": "interaction_pickup_note",
-    "Name": "습득 가능한 노트",
+    "Id": "interaction_npc_omakegirl",
+    "Name": "튜토리얼 종료 후 자유대화 NPC",
     "InteractionOptionIdList": [
-      "option_inspect_note",
-      "option_pickup_note"
-    ]
+      "option_talk",
+      "option_status"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": "char_girl",
+    "DialogueDataId": "dialogue_omakegirl_start_first",
+    "RepeatDialogueDataId": "dialogue_omakegirl_start_repeat",
+    "DialogueCompleteFlagId": "flag_omakegirl_endfirstdialogue",
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_npc_omakecreature",
+    "Name": "튜토리얼 종료 후 자유대화 NPC",
+    "InteractionOptionIdList": [
+      "option_talk"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": "char_creature",
+    "DialogueDataId": "dialogue_omakecreature_start_first",
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_npc_omakepilot",
+    "Name": "튜토리얼 종료 후 자유대화 NPC",
+    "InteractionOptionIdList": [
+      "option_talk"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": "char_pilot",
+    "DialogueDataId": "dialogue_omakepilot_start_first",
+    "RepeatDialogueDataId": "dialogue_omakepilot_start_repeat",
+    "DialogueCompleteFlagId": "flag_omakepilot_endfirstdialogue",
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_door_entrance_cardreader",
+    "Name": "입구 카드키 단말",
+    "InteractionOptionIdList": [
+      "option_enterstage_in"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_door_corridor_to_entrance",
+    "Name": "복도에서 밖으로 나가는 문",
+    "InteractionOptionIdList": [
+      "option_enterstage_out"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_area_manquarters_cabinet",
+    "Name": "남직원 숙소 캐비닛 조사",
+    "InteractionOptionIdList": [
+      "option_inspect_area"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": "inspectarea_manquarters_cabinet"
+  },
+  {
+    "Id": "interaction_area_manquarters_noticeboard",
+    "Name": "남직원 숙소 알림판 조사",
+    "InteractionOptionIdList": [
+      "option_inspect_area"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": "inspectarea_manquarters_noticeboard"
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_npc_tutopilot",
+    "Name": "튜토리얼용 파일럿 NPC",
+    "InteractionOptionIdList": [
+      "option_talk"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": "char_pilot",
+    "DialogueDataId": "dialogue_tutopilot_start",
+    "RepeatDialogueDataId": "dialogue_tutopilot_start_repeat",
+    "DialogueCompleteFlagId": "flag_tutopilot_enddialogue",
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": null,
+    "Name": null,
+    "InteractionOptionIdList": null,
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": null,
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_panel_manquarters",
+    "Name": "남직원 숙소 명찰",
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_corridor_panel_manquarters",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_panel_laboratory",
+    "Name": null,
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_corridor_panel_laboratory",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_panel_archiveroom",
+    "Name": null,
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_corridor_panel_archiveroom",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_panel_womanquarters",
+    "Name": null,
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_corridor_panel_womanquarters",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_panel_toilet",
+    "Name": null,
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_corridor_panel_toilet",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
+  },
+  {
+    "Id": "interaction_decoobj_door_cafeteria",
+    "Name": null,
+    "InteractionOptionIdList": [
+      "option_inspect_decoobj"
+    ],
+    "InspectObjectDataId": null,
+    "JournalDataId": null,
+    "PopupTextDataId": "text_corridor_door_cafeteria",
+    "CharacterDataId": null,
+    "DialogueDataId": null,
+    "RepeatDialogueDataId": null,
+    "DialogueCompleteFlagId": null,
+    "InspectAreaDataId": null
   }
 ]
