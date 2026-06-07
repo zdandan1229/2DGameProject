@@ -1,0 +1,2704 @@
+fileFormatVersion: 2
+guid: cd8101854336b2e49ace8fd5de101a10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8372466015523449909
+    second: dna_second_transparent_green_removed_graywhite_0
+  - first:
+      213: -3655593343823858789
+    second: dna_second_transparent_green_removed_graywhite_1
+  - first:
+      213: -4269056728018027173
+    second: dna_second_transparent_green_removed_graywhite_2
+  - first:
+      213: 1242415789500169608
+    second: dna_second_transparent_green_removed_graywhite_3
+  - first:
+      213: 108984903165833558
+    second: dna_second_transparent_green_removed_graywhite_4
+  - first:
+      213: -2722071621545413450
+    second: dna_second_transparent_green_removed_graywhite_5
+  - first:
+      213: -1267803340851979575
+    second: dna_second_transparent_green_removed_graywhite_6
+  - first:
+      213: -3602911530508878589
+    second: dna_second_transparent_green_removed_graywhite_7
+  - first:
+      213: -8498541603013173179
+    second: dna_second_transparent_green_removed_graywhite_8
+  - first:
+      213: -5740750005969884
+    second: dna_second_transparent_green_removed_graywhite_9
+  - first:
+      213: 1121504282117479175
+    second: dna_second_transparent_green_removed_graywhite_10
+  - first:
+      213: -1709083427621359368
+    second: dna_second_transparent_green_removed_graywhite_11
+  - first:
+      213: 1694909043911248067
+    second: dna_second_transparent_green_removed_graywhite_12
+  - first:
+      213: -2285656475553259975
+    second: dna_second_transparent_green_removed_graywhite_13
+  - first:
+      213: -5862818501914043881
+    second: dna_second_transparent_green_removed_graywhite_14
+  - first:
+      213: -9008360239234312275
+    second: dna_second_transparent_green_removed_graywhite_15
+  - first:
+      213: 8929899986766775351
+    second: dna_second_transparent_green_removed_graywhite_16
+  - first:
+      213: 2604567622732588829
+    second: dna_second_transparent_green_removed_graywhite_17
+  - first:
+      213: -7680513296517132633
+    second: dna_second_transparent_green_removed_graywhite_18
+  - first:
+      213: 7888022122471688055
+    second: dna_second_transparent_green_removed_graywhite_19
+  - first:
+      213: 3785072167648197977
+    second: dna_second_transparent_green_removed_graywhite_20
+  - first:
+      213: -1898458345455172060
+    second: dna_second_transparent_green_removed_graywhite_21
+  - first:
+      213: 7128711978387865613
+    second: dna_second_transparent_green_removed_graywhite_22
+  - first:
+      213: -5633983331025663251
+    second: dna_second_transparent_green_removed_graywhite_23
+  - first:
+      213: 1519745080972369813
+    second: dna_second_transparent_green_removed_graywhite_24
+  - first:
+      213: -3281851341942002307
+    second: dna_second_transparent_green_removed_graywhite_25
+  - first:
+      213: 4819810226282983381
+    second: dna_second_transparent_green_removed_graywhite_26
+  - first:
+      213: 2020355131087135658
+    second: dna_second_transparent_green_removed_graywhite_27
+  - first:
+      213: -4167984018810824614
+    second: dna_second_transparent_green_removed_graywhite_28
+  - first:
+      213: -4535544306792957556
+    second: dna_second_transparent_green_removed_graywhite_29
+  - first:
+      213: 4601530462381057096
+    second: dna_second_transparent_green_removed_graywhite_30
+  - first:
+      213: 1427916764600623062
+    second: dna_second_transparent_green_removed_graywhite_31
+  - first:
+      213: -4599246165345614711
+    second: dna_second_transparent_green_removed_graywhite_32
+  - first:
+      213: 60632548814542841
+    second: dna_second_transparent_green_removed_graywhite_33
+  - first:
+      213: 5246925349407378397
+    second: dna_second_transparent_green_removed_graywhite_34
+  - first:
+      213: -949774915788025317
+    second: dna_second_transparent_green_removed_graywhite_35
+  - first:
+      213: 8162382037143429160
+    second: dna_second_transparent_green_removed_graywhite_36
+  - first:
+      213: -2937817716695308145
+    second: dna_second_transparent_green_removed_graywhite_37
+  - first:
+      213: 2317093939817755007
+    second: dna_second_transparent_green_removed_graywhite_38
+  - first:
+      213: 7223522941012252633
+    second: dna_second_transparent_green_removed_graywhite_39
+  - first:
+      213: -4995186747111758499
+    second: dna_second_transparent_green_removed_graywhite_40
+  - first:
+      213: 8236563433744811079
+    second: dna_second_transparent_green_removed_graywhite_41
+  - first:
+      213: -1510083569184276043
+    second: dna_second_transparent_green_removed_graywhite_42
+  - first:
+      213: 1313028902513220542
+    second: dna_second_transparent_green_removed_graywhite_43
+  - first:
+      213: -2053206181465466575
+    second: dna_second_transparent_green_removed_graywhite_44
+  - first:
+      213: 4101636782313662665
+    second: dna_second_transparent_green_removed_graywhite_45
+  - first:
+      213: -7647981210899294003
+    second: dna_second_transparent_green_removed_graywhite_46
+  - first:
+      213: 4207294806414104308
+    second: dna_second_transparent_green_removed_graywhite_47
+  - first:
+      213: -7521849684715092744
+    second: dna_second_transparent_green_removed_graywhite_48
+  - first:
+      213: -2074229931994299341
+    second: dna_second_transparent_green_removed_graywhite_49
+  - first:
+      213: 4043955078466203893
+    second: dna_second_transparent_green_removed_graywhite_50
+  - first:
+      213: 3410815401440136231
+    second: dna_second_transparent_green_removed_graywhite_51
+  - first:
+      213: -5766351564242313803
+    second: dna_second_transparent_green_removed_graywhite_52
+  - first:
+      213: 5945147890489774359
+    second: dna_second_transparent_green_removed_graywhite_53
+  - first:
+      213: -1098905412223342814
+    second: dna_second_transparent_green_removed_graywhite_54
+  - first:
+      213: -945438708101678162
+    second: dna_second_transparent_green_removed_graywhite_55
+  - first:
+      213: 5221294664474219217
+    second: dna_second_transparent_green_removed_graywhite_56
+  - first:
+      213: -6780059257530569700
+    second: dna_second_transparent_green_removed_graywhite_57
+  - first:
+      213: 7885612477456957820
+    second: dna_second_transparent_green_removed_graywhite_58
+  - first:
+      213: -251215130786989443
+    second: dna_second_transparent_green_removed_graywhite_59
+  - first:
+      213: -7602737523623819970
+    second: dna_second_transparent_green_removed_graywhite_60
+  - first:
+      213: 8990518429836884514
+    second: dna_second_transparent_green_removed_graywhite_61
+  - first:
+      213: -2033533019457692398
+    second: dna_second_transparent_green_removed_graywhite_62
+  - first:
+      213: -5214882611561054392
+    second: dna_second_transparent_green_removed_graywhite_63
+  - first:
+      213: 1740084155625781426
+    second: dna_second_transparent_green_removed_graywhite_64
+  - first:
+      213: -1181252358908513943
+    second: dna_second_transparent_green_removed_graywhite_65
+  - first:
+      213: 3230541557637493668
+    second: dna_second_transparent_green_removed_graywhite_66
+  - first:
+      213: 374567741604990975
+    second: dna_second_transparent_green_removed_graywhite_67
+  - first:
+      213: -253460881588623455
+    second: dna_second_transparent_green_removed_graywhite_68
+  - first:
+      213: 6686764494483490619
+    second: dna_second_transparent_green_removed_graywhite_69
+  - first:
+      213: -6048645533087670912
+    second: dna_second_transparent_green_removed_graywhite_70
+  - first:
+      213: 67649190568817295
+    second: dna_second_transparent_green_removed_graywhite_71
+  - first:
+      213: 8251853958729022918
+    second: dna_second_transparent_green_removed_graywhite_72
+  - first:
+      213: 4976482079105422751
+    second: dna_second_transparent_green_removed_graywhite_73
+  - first:
+      213: 5736171860546642575
+    second: dna_second_transparent_green_removed_graywhite_74
+  - first:
+      213: 5451719618105536562
+    second: dna_second_transparent_green_removed_graywhite_75
+  - first:
+      213: 754107354933667444
+    second: dna_second_transparent_green_removed_graywhite_76
+  - first:
+      213: 3279601638969135514
+    second: dna_second_transparent_green_removed_graywhite_77
+  - first:
+      213: -2281249811186360906
+    second: dna_second_transparent_green_removed_graywhite_78
+  - first:
+      213: 1870195574148803188
+    second: dna_second_transparent_green_removed_graywhite_79
+  - first:
+      213: 7573092076413013700
+    second: dna_second_transparent_green_removed_graywhite_80
+  - first:
+      213: -7554567300237362747
+    second: dna_second_transparent_green_removed_graywhite_81
+  - first:
+      213: 3823120844376321311
+    second: dna_second_transparent_green_removed_graywhite_82
+  - first:
+      213: 6596135946922135731
+    second: dna_second_transparent_green_removed_graywhite_83
+  - first:
+      213: -3806888204539792361
+    second: dna_second_transparent_green_removed_graywhite_84
+  - first:
+      213: 8243247090537180253
+    second: dna_second_transparent_green_removed_graywhite_85
+  - first:
+      213: -7074314129842831443
+    second: dna_second_transparent_green_removed_graywhite_86
+  - first:
+      213: -1061757099525445951
+    second: dna_second_transparent_green_removed_graywhite_87
+  - first:
+      213: -3700228087779554282
+    second: dna_second_transparent_green_removed_graywhite_88
+  - first:
+      213: -2676053935417277869
+    second: dna_second_transparent_green_removed_graywhite_89
+  - first:
+      213: 6308955577754898248
+    second: dna_second_transparent_green_removed_graywhite_90
+  - first:
+      213: -6201461681029746355
+    second: dna_second_transparent_green_removed_graywhite_91
+  - first:
+      213: 5213429089445419150
+    second: dna_second_transparent_green_removed_graywhite_92
+  - first:
+      213: 1981078690618804276
+    second: dna_second_transparent_green_removed_graywhite_93
+  - first:
+      213: 1443020730116242972
+    second: dna_second_transparent_green_removed_graywhite_94
+  - first:
+      213: -8652222059677022340
+    second: dna_second_transparent_green_removed_graywhite_95
+  - first:
+      213: 7149840329834845975
+    second: dna_second_transparent_green_removed_graywhite_96
+  - first:
+      213: 5709755970903135615
+    second: dna_second_transparent_green_removed_graywhite_97
+  - first:
+      213: -6558948886355061190
+    second: dna_second_transparent_green_removed_graywhite_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_0
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 496
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3d1b2a4860fcb80800000000000000
+      internalID: -8372466015523449909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_1
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 485
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93b812d839b44dc0800000000000000
+      internalID: -3655593343823858789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_2
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 334
+        width: 234
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d7e78368341c4c0800000000000000
+      internalID: -4269056728018027173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_3
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 498
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d7e74f392fd3110800000000000000
+      internalID: 1242415789500169608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_4
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 213
+        width: 582
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65174172131338100800000000000000
+      internalID: 108984903165833558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_5
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 525
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b43d984842493ad0800000000000000
+      internalID: -2722071621545413450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_6
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 500
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cad67f149bd76ee0800000000000000
+      internalID: -1267803340851979575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_7
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 516
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dfbd25d03effdc0800000000000000
+      internalID: -3602911530508878589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_8
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 419
+        width: 290
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5406583707d1f0a80800000000000000
+      internalID: -8498541603013173179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 480
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c562b71da9beff0800000000000000
+      internalID: -5740750005969884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_10
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 201
+        width: 567
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b11bdd332609f00800000000000000
+      internalID: 1121504282117479175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_11
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 507
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f03f1d7dad1848e0800000000000000
+      internalID: -1709083427621359368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_12
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 497
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c84de0abc6858710800000000000000
+      internalID: 1694909043911248067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_13
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 430
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e9310ab87b740e0800000000000000
+      internalID: -2285656475553259975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 298
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a53d292a513aea0800000000000000
+      internalID: -5862818501914043881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_15
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 369
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da79fab3710ebf280800000000000000
+      internalID: -9008360239234312275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_16
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 357
+        width: 25
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734cffea9b06deb70800000000000000
+      internalID: 8929899986766775351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_17
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 414
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17a57a0478452420800000000000000
+      internalID: 2604567622732588829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_18
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 359
+        width: 168
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae8e6499d5596590800000000000000
+      internalID: -7680513296517132633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_19
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 368
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777095ee352e77d60800000000000000
+      internalID: 7888022122471688055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 403
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d73e11517478430800000000000000
+      internalID: 3785072167648197977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_21
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 397
+        width: 65
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426c44a713257a5e0800000000000000
+      internalID: -1898458345455172060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 387
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0081e956c54ee260800000000000000
+      internalID: 7128711978387865613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 417
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea4eb3b20210d1b0800000000000000
+      internalID: -5633983331025663251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_24
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 409
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f51846918371510800000000000000
+      internalID: 1519745080972369813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_25
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 402
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d68eda7958472d0800000000000000
+      internalID: -3281851341942002307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_26
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 383
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df64664dd763e240800000000000000
+      internalID: 4819810226282983381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_27
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 386
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa32694994eb90c10800000000000000
+      internalID: 2020355131087135658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_28
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 283
+        width: 149
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5896492e985826c0800000000000000
+      internalID: -4167984018810824614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 266
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c897f8abb728e01c0800000000000000
+      internalID: -4535544306792957556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_30
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 402
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844ac59539bebdf30800000000000000
+      internalID: 4601530462381057096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_31
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 407
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df58d26bbaf0d310800000000000000
+      internalID: 1427916764600623062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_32
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 410
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9844ffffaf13c20c0800000000000000
+      internalID: -4599246165345614711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_33
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 368
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7daed5bf867d000800000000000000
+      internalID: 60632548814542841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_34
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 392
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb4b6e4ec2d0d840800000000000000
+      internalID: 5246925349407378397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_35
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 385
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12d0e70fb8b1d2f0800000000000000
+      internalID: -949774915788025317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_36
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 370
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820a6f4773b964170800000000000000
+      internalID: 8162382037143429160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_37
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 302
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88e6851a56ca37d0800000000000000
+      internalID: -2937817716695308145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_38
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 286
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f713c0a69a8f72020800000000000000
+      internalID: 2317093939817755007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_39
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 345
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d79bedc7db1f3460800000000000000
+      internalID: 7223522941012252633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_40
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 286
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d552aaf7e188daab0800000000000000
+      internalID: -4995186747111758499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_41
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 368
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744c456cdc62e4270800000000000000
+      internalID: 8236563433744811079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_42
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 304
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b10e9d9efa1b0be0800000000000000
+      internalID: -1510083569184276043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_43
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 226
+        width: 87
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb1f1284d0d83210800000000000000
+      internalID: 1313028902513220542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_44
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 326
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1395d173bdb8183e0800000000000000
+      internalID: -2053206181465466575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_45
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 308
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c86b7f0ce0fbe830800000000000000
+      internalID: 4101636782313662665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_46
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 320
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc85c730c99ecd590800000000000000
+      internalID: -7647981210899294003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_47
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 339
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f698a1d550536a30800000000000000
+      internalID: 4207294806414104308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_48
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 367
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f44ca070950d9790800000000000000
+      internalID: -7521849684715092744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_49
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 212
+        width: 247
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3344ff8dddad633e0800000000000000
+      internalID: -2074229931994299341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_50
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 339
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f07d93d7b30f1830800000000000000
+      internalID: 4043955078466203893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_51
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 338
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c454d4986a55f20800000000000000
+      internalID: 3410815401440136231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_52
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 374
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd9153cdcdc9ffa0800000000000000
+      internalID: -5766351564242313803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_53
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 314
+        width: 15
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7115ec5f188618250800000000000000
+      internalID: 5945147890489774359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_54
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 350
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2276cae8957efb0f0800000000000000
+      internalID: -1098905412223342814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_55
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 329
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eabf1be018021e2f0800000000000000
+      internalID: -945438708101678162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_56
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 253
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2d0af65d3c57840800000000000000
+      internalID: 5221294664474219217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_57
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 167
+        width: 334
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1caace070468e1a0800000000000000
+      internalID: -6780059257530569700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_58
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 279
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71c53bb4c25f6d60800000000000000
+      internalID: 7885612477456957820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_59
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 279
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7afc376b21838cf0800000000000000
+      internalID: -251215130786989443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_60
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 345
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e358ed7d086ad7690800000000000000
+      internalID: -7602737523623819970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_61
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 320
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ab70dc0ecb4cc70800000000000000
+      internalID: 8990518429836884514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_62
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 365
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d52303e7077c3e0800000000000000
+      internalID: -2033533019457692398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_63
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 346
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fba88f4e301a7b0800000000000000
+      internalID: -5214882611561054392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_64
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 317
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b83c57f155062810800000000000000
+      internalID: 1740084155625781426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_65
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 341
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9617a25fc395b9fe0800000000000000
+      internalID: -1181252358908513943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_66
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 317
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3be173e6035dc20800000000000000
+      internalID: 3230541557637493668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_67
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 311
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff8fae506bb23500800000000000000
+      internalID: 374567741604990975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_68
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 339
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7e37ccba68b7cf0800000000000000
+      internalID: -253460881588623455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_69
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 318
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37026631e82ccc50800000000000000
+      internalID: 6686764494483490619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_70
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 349
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d5e0c4fe4ee0ca0800000000000000
+      internalID: -6048645533087670912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_71
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 317
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f827235949650f000800000000000000
+      internalID: 67649190568817295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_72
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 343
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdb17c8479748270800000000000000
+      internalID: 8251853958729022918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_73
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 291
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f951d2c9514001540800000000000000
+      internalID: 4976482079105422751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_74
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 364
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8269766ae9fa9f40800000000000000
+      internalID: 5736171860546642575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_75
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 173
+        width: 191
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2307534bb1668ab40800000000000000
+      internalID: 5451719618105536562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_76
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 258
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476a455d4a0277a00800000000000000
+      internalID: 754107354933667444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_77
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 265
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a915b87805c738d20800000000000000
+      internalID: 3279601638969135514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_78
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 345
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd5f40226f5750e0800000000000000
+      internalID: -2281249811186360906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_79
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 301
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47aa5a947f444f910800000000000000
+      internalID: 1870195574148803188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_80
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 282
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce4ce99e17091960800000000000000
+      internalID: 7573092076413013700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_81
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 315
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9f195f019c82790800000000000000
+      internalID: -7554567300237362747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_82
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 360
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d2176f6247e0530800000000000000
+      internalID: 3823120844376321311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_83
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 366
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b09a7622be2a8b50800000000000000
+      internalID: 6596135946922135731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_84
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 268
+        width: 75
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714f7c409573b2bc0800000000000000
+      internalID: -3806888204539792361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_85
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 374
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cad33ed85e56270800000000000000
+      internalID: 8243247090537180253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_86
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daff03db7ccf2dd90800000000000000
+      internalID: -7074314129842831443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_87
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 189
+        width: 185
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6690d1b81e341f0800000000000000
+      internalID: -1061757099525445951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_88
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 247
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c0af7a82626acc0800000000000000
+      internalID: -3700228087779554282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_89
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 195
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352caa3cf1fbcdad0800000000000000
+      internalID: -2676053935417277869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_90
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 227
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fccc3fba9ed8750800000000000000
+      internalID: 6308955577754898248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_91
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 234
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d417606357bffe9a0800000000000000
+      internalID: -6201461681029746355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_92
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 204
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88151a8222d95840800000000000000
+      internalID: 5213429089445419150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_93
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 202
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4380e6aa2943e7b10800000000000000
+      internalID: 1981078690618804276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_94
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 205
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e7a1665b3a60410800000000000000
+      internalID: 1443020730116242972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_95
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 196
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77072fc0e12de780800000000000000
+      internalID: -8652222059677022340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_96
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 182
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717519406e5593360800000000000000
+      internalID: 7149840329834845975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_97
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 188
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75d8dfcdc02d3f40800000000000000
+      internalID: 5709755970903135615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dna_second_transparent_green_removed_graywhite_98
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 193
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36dcd81dbee9f4a0800000000000000
+      internalID: -6558948886355061190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dna_second_transparent_green_removed_graywhite_0: -8372466015523449909
+      dna_second_transparent_green_removed_graywhite_1: -3655593343823858789
+      dna_second_transparent_green_removed_graywhite_10: 1121504282117479175
+      dna_second_transparent_green_removed_graywhite_11: -1709083427621359368
+      dna_second_transparent_green_removed_graywhite_12: 1694909043911248067
+      dna_second_transparent_green_removed_graywhite_13: -2285656475553259975
+      dna_second_transparent_green_removed_graywhite_14: -5862818501914043881
+      dna_second_transparent_green_removed_graywhite_15: -9008360239234312275
+      dna_second_transparent_green_removed_graywhite_16: 8929899986766775351
+      dna_second_transparent_green_removed_graywhite_17: 2604567622732588829
+      dna_second_transparent_green_removed_graywhite_18: -7680513296517132633
+      dna_second_transparent_green_removed_graywhite_19: 7888022122471688055
+      dna_second_transparent_green_removed_graywhite_2: -4269056728018027173
+      dna_second_transparent_green_removed_graywhite_20: 3785072167648197977
+      dna_second_transparent_green_removed_graywhite_21: -1898458345455172060
+      dna_second_transparent_green_removed_graywhite_22: 7128711978387865613
+      dna_second_transparent_green_removed_graywhite_23: -5633983331025663251
+      dna_second_transparent_green_removed_graywhite_24: 1519745080972369813
+      dna_second_transparent_green_removed_graywhite_25: -3281851341942002307
+      dna_second_transparent_green_removed_graywhite_26: 4819810226282983381
+      dna_second_transparent_green_removed_graywhite_27: 2020355131087135658
+      dna_second_transparent_green_removed_graywhite_28: -4167984018810824614
+      dna_second_transparent_green_removed_graywhite_29: -4535544306792957556
+      dna_second_transparent_green_removed_graywhite_3: 1242415789500169608
+      dna_second_transparent_green_removed_graywhite_30: 4601530462381057096
+      dna_second_transparent_green_removed_graywhite_31: 1427916764600623062
+      dna_second_transparent_green_removed_graywhite_32: -4599246165345614711
+      dna_second_transparent_green_removed_graywhite_33: 60632548814542841
+      dna_second_transparent_green_removed_graywhite_34: 5246925349407378397
+      dna_second_transparent_green_removed_graywhite_35: -949774915788025317
+      dna_second_transparent_green_removed_graywhite_36: 8162382037143429160
+      dna_second_transparent_green_removed_graywhite_37: -2937817716695308145
+      dna_second_transparent_green_removed_graywhite_38: 2317093939817755007
+      dna_second_transparent_green_removed_graywhite_39: 7223522941012252633
+      dna_second_transparent_green_removed_graywhite_4: 108984903165833558
+      dna_second_transparent_green_removed_graywhite_40: -4995186747111758499
+      dna_second_transparent_green_removed_graywhite_41: 8236563433744811079
+      dna_second_transparent_green_removed_graywhite_42: -1510083569184276043
+      dna_second_transparent_green_removed_graywhite_43: 1313028902513220542
+      dna_second_transparent_green_removed_graywhite_44: -2053206181465466575
+      dna_second_transparent_green_removed_graywhite_45: 4101636782313662665
+      dna_second_transparent_green_removed_graywhite_46: -7647981210899294003
+      dna_second_transparent_green_removed_graywhite_47: 4207294806414104308
+      dna_second_transparent_green_removed_graywhite_48: -7521849684715092744
+      dna_second_transparent_green_removed_graywhite_49: -2074229931994299341
+      dna_second_transparent_green_removed_graywhite_5: -2722071621545413450
+      dna_second_transparent_green_removed_graywhite_50: 4043955078466203893
+      dna_second_transparent_green_removed_graywhite_51: 3410815401440136231
+      dna_second_transparent_green_removed_graywhite_52: -5766351564242313803
+      dna_second_transparent_green_removed_graywhite_53: 5945147890489774359
+      dna_second_transparent_green_removed_graywhite_54: -1098905412223342814
+      dna_second_transparent_green_removed_graywhite_55: -945438708101678162
+      dna_second_transparent_green_removed_graywhite_56: 5221294664474219217
+      dna_second_transparent_green_removed_graywhite_57: -6780059257530569700
+      dna_second_transparent_green_removed_graywhite_58: 7885612477456957820
+      dna_second_transparent_green_removed_graywhite_59: -251215130786989443
+      dna_second_transparent_green_removed_graywhite_6: -1267803340851979575
+      dna_second_transparent_green_removed_graywhite_60: -7602737523623819970
+      dna_second_transparent_green_removed_graywhite_61: 8990518429836884514
+      dna_second_transparent_green_removed_graywhite_62: -2033533019457692398
+      dna_second_transparent_green_removed_graywhite_63: -5214882611561054392
+      dna_second_transparent_green_removed_graywhite_64: 1740084155625781426
+      dna_second_transparent_green_removed_graywhite_65: -1181252358908513943
+      dna_second_transparent_green_removed_graywhite_66: 3230541557637493668
+      dna_second_transparent_green_removed_graywhite_67: 374567741604990975
+      dna_second_transparent_green_removed_graywhite_68: -253460881588623455
+      dna_second_transparent_green_removed_graywhite_69: 6686764494483490619
+      dna_second_transparent_green_removed_graywhite_7: -3602911530508878589
+      dna_second_transparent_green_removed_graywhite_70: -6048645533087670912
+      dna_second_transparent_green_removed_graywhite_71: 67649190568817295
+      dna_second_transparent_green_removed_graywhite_72: 8251853958729022918
+      dna_second_transparent_green_removed_graywhite_73: 4976482079105422751
+      dna_second_transparent_green_removed_graywhite_74: 5736171860546642575
+      dna_second_transparent_green_removed_graywhite_75: 5451719618105536562
+      dna_second_transparent_green_removed_graywhite_76: 754107354933667444
+      dna_second_transparent_green_removed_graywhite_77: 3279601638969135514
+      dna_second_transparent_green_removed_graywhite_78: -2281249811186360906
+      dna_second_transparent_green_removed_graywhite_79: 1870195574148803188
+      dna_second_transparent_green_removed_graywhite_8: -8498541603013173179
+      dna_second_transparent_green_removed_graywhite_80: 7573092076413013700
+      dna_second_transparent_green_removed_graywhite_81: -7554567300237362747
+      dna_second_transparent_green_removed_graywhite_82: 3823120844376321311
+      dna_second_transparent_green_removed_graywhite_83: 6596135946922135731
+      dna_second_transparent_green_removed_graywhite_84: -3806888204539792361
+      dna_second_transparent_green_removed_graywhite_85: 8243247090537180253
+      dna_second_transparent_green_removed_graywhite_86: -7074314129842831443
+      dna_second_transparent_green_removed_graywhite_87: -1061757099525445951
+      dna_second_transparent_green_removed_graywhite_88: -3700228087779554282
+      dna_second_transparent_green_removed_graywhite_89: -2676053935417277869
+      dna_second_transparent_green_removed_graywhite_9: -5740750005969884
+      dna_second_transparent_green_removed_graywhite_90: 6308955577754898248
+      dna_second_transparent_green_removed_graywhite_91: -6201461681029746355
+      dna_second_transparent_green_removed_graywhite_92: 5213429089445419150
+      dna_second_transparent_green_removed_graywhite_93: 1981078690618804276
+      dna_second_transparent_green_removed_graywhite_94: 1443020730116242972
+      dna_second_transparent_green_removed_graywhite_95: -8652222059677022340
+      dna_second_transparent_green_removed_graywhite_96: 7149840329834845975
+      dna_second_transparent_green_removed_graywhite_97: 5709755970903135615
+      dna_second_transparent_green_removed_graywhite_98: -6558948886355061190
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

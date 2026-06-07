@@ -1,0 +1,1607 @@
+fileFormatVersion: 2
+guid: 4def1b2e53a41c049a482da89f093210
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2191978942251726893
+    second: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28fc000c397b6e10800000000000000
+      internalID: 2191978942251726893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_1
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb49a687e042a943935986b435a0912
+      internalID: 341866775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_2
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97594fd605830a4fa3f1c294464dd77
+      internalID: -2071082782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_3
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5cf242e43e9324ea06db92bd255105
+      internalID: -1813287979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_4
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e81e03cc59bc841ab60a36a45ee205
+      internalID: -1589042740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_5
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbb5a6a94ad5e54eb229c29b89ae4a4
+      internalID: -11065103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_6
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a078ff1e9e1e44784fa90ae080265a
+      internalID: 641855162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_7
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 2296
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4193268a74bc66244afb961a31ca0260
+      internalID: -1657826060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e563b173fc73572458bf0eb8af40abf3
+      internalID: 593164106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_9
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01da9290618b5543b1189b092c756e5
+      internalID: -1403778660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_10
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb60f8377b519464ca2502c47b539b8c
+      internalID: -1944784118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_11
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3fea5541029d1498e1e2144c454088
+      internalID: 1100574858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_12
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb24bec728035c24eaed54711f012833
+      internalID: 832918985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_13
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4b60162040ec34186e58326e2126ea
+      internalID: -2121679783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_14
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d722eb70ba2e047ac59b3249a80cd8
+      internalID: 1421325387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_15
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 1968
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3336a2f67ef4e6a46b42e3202d5ce107
+      internalID: -1180725988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f022d4f57c6301499745b9c754c6143
+      internalID: -705225745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_17
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cf257a07b5c9348b31f81389d36090
+      internalID: -989291911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_18
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7ed501cc57ab14786371fc537b5501
+      internalID: 453372075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_19
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7369917bcf03c884f85af758178721bb
+      internalID: -963535867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_20
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37db8cb3dfd6714987514e8be468f9c
+      internalID: -1265734748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_21
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffefff65d642cef40a899aeb31aac601
+      internalID: 134176765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_22
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad6ac6e851c234419795b70bc784e2d
+      internalID: 348796243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_23
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 1640
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff52245d819532d43ad5aa37d31ee211
+      internalID: -2094438943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a675c05268365c440bc93b813463c06d
+      internalID: 1393406615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_25
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0587bbd0f947741abd621b1d25fb55
+      internalID: 1948852810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_26
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8c605f8626ebb4ea754d5daca4250c
+      internalID: 1934919820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_27
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443fef3d361ae5b42aa3c8cf1ab95b18
+      internalID: -1394953132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_28
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac79bd541326e04796e5e6863425311
+      internalID: 319159329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_29
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a710d411fecac14f8da48a4b9e08f9b
+      internalID: 987930034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_30
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906a105cd9b754d4391180f8f8a6fd3e
+      internalID: 192030992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_31
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 1312
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd3bd5f7eceaf942a951fc038f8e3f2
+      internalID: 1126083183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7801155a2d15f64981d2b42e79959dd
+      internalID: -1379913786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_33
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79a83b3c2df8d745a49d285ee9ea68e
+      internalID: 791322281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_34
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413bb434375c2214f85e9373a65dad97
+      internalID: 559431006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_35
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76865ac4b17d68c4a8ecbb7d2a6559ef
+      internalID: -1016913152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_36
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab13ed82a03b8224680dfb4c5e2ad120
+      internalID: -613181469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_37
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34044d1ad7eb784e96901bd20a5afa6
+      internalID: -2055302104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_38
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0218be0c3ff98094a9dfa1b3adf619d7
+      internalID: -73614829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_39
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 984
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7acadb087de9034f8263d0430d3b441
+      internalID: 587898986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55714d072613b649b6572ebf19dd2f8
+      internalID: -381188570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_41
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef8cf20693091c4396eb3b4efaeec7f
+      internalID: -1949199420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_42
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00323d16b83bc984fa911eb0d075b503
+      internalID: -924664659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_43
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10988de816b2f8b49a5470aed28f2f34
+      internalID: 698446588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_44
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89189411f642d740adcd14eac3cb61d
+      internalID: 1577369320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_45
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002606a14a30e0c4e8ce3ba2584d243d
+      internalID: 753107351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_46
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0d8e30ac0d66b499ff94752934a2d5
+      internalID: 571316497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_47
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 656
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531885c4a6d7c724c95647015fd00ad5
+      internalID: 667322578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d0e60f1becd7441abf0616a4c1d213
+      internalID: 1197196960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_49
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee75782af9a50b0408a1e20e284bc7ef
+      internalID: -1417156749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_50
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df14d9e9fc3783449a6ecac4101d1d7
+      internalID: -711976328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_51
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8862ec13cbbe7f84aa0353257043f5e4
+      internalID: 902416913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_52
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509c60765cc145241acec3c0ef0887b4
+      internalID: -1212700177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_53
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abbbc9af4fde8b42aaa3c525f816cba
+      internalID: -993792468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_54
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1658bf094d757cc4fad9b136f7e3a09a
+      internalID: -1746589763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_55
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 328
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ed7f884f321bf4aa13de7f45a25850
+      internalID: -278854519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9d3ceccc67112479af804dab7f7482
+      internalID: 1494077119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_57
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e931cfb44c492f34b8b214254d12c364
+      internalID: 1714880841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_58
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05062aa65d1d79d4f8076e075aebe725
+      internalID: -54130413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_59
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf1da869fe5bc1499b6cf4501d13749
+      internalID: -1060297950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_60
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c950ad7e9b878b643a35ca9448d45205
+      internalID: -1533476018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_61
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77eb750e15f21ea4da7234981d85cfa4
+      internalID: 1745217762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_62
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1432a11eac84349bf76c710b3183d0
+      internalID: -1922041034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animation_DNA_loop15fps_seamless64_spritesheet_8x8_63
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 0
+        width: 1110
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6598cfbf7946844bf697f0b9e97cf6
+      internalID: -508357891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c6946ba9912787c4d8bfb4b77a2ba914
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1110.0,"y":328.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_0: 2191978942251726893
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_1: 341866775
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_10: -1944784118
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_11: 1100574858
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_12: 832918985
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_13: -2121679783
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_14: 1421325387
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_15: -1180725988
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_16: -705225745
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_17: -989291911
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_18: 453372075
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_19: -963535867
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_2: -2071082782
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_20: -1265734748
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_21: 134176765
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_22: 348796243
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_23: -2094438943
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_24: 1393406615
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_25: 1948852810
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_26: 1934919820
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_27: -1394953132
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_28: 319159329
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_29: 987930034
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_3: -1813287979
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_30: 192030992
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_31: 1126083183
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_32: -1379913786
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_33: 791322281
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_34: 559431006
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_35: -1016913152
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_36: -613181469
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_37: -2055302104
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_38: -73614829
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_39: 587898986
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_4: -1589042740
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_40: -381188570
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_41: -1949199420
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_42: -924664659
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_43: 698446588
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_44: 1577369320
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_45: 753107351
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_46: 571316497
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_47: 667322578
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_48: 1197196960
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_49: -1417156749
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_5: -11065103
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_50: -711976328
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_51: 902416913
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_52: -1212700177
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_53: -993792468
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_54: -1746589763
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_55: -278854519
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_56: 1494077119
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_57: 1714880841
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_58: -54130413
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_59: -1060297950
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_6: 641855162
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_60: -1533476018
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_61: 1745217762
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_62: -1922041034
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_63: -508357891
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_7: -1657826060
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_8: 593164106
+      Animation_DNA_loop15fps_seamless64_spritesheet_8x8_9: -1403778660
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

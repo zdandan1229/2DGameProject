@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: a78fa0ab34c4b28459d71a5a377e1a96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6102252306159130600
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_0
+  - first:
+      213: 2591153431774745754
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_1
+  - first:
+      213: 1808046556731351001
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_2
+  - first:
+      213: -1682879886823293032
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_3
+  - first:
+      213: 5933569380052461297
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_4
+  - first:
+      213: -1598067033923741690
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_5
+  - first:
+      213: -1732856619824206388
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_6
+  - first:
+      213: -7763647756530355245
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_7
+  - first:
+      213: -3333828297306230504
+    second: playerwalk_backward_cycle_contact_9f_sprite_sheet_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 15
+        width: 250
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e75c6e242e8fa450800000000000000
+      internalID: 6102252306159130600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 15
+        width: 236
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94d7735150a5f320800000000000000
+      internalID: 2591153431774745754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 15
+        width: 252
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df175f83c8771910800000000000000
+      internalID: 1808046556731351001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 15
+        width: 262
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f7f32c8a535a8e0800000000000000
+      internalID: -1682879886823293032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 15
+        width: 257
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6692ce9e5485250800000000000000
+      internalID: 5933569380052461297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 15
+        width: 248
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60896b3ef7682d9e0800000000000000
+      internalID: -1598067033923741690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 15
+        width: 237
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccda1b8d518a3f7e0800000000000000
+      internalID: -1732856619824206388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 15
+        width: 261
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3ffbebf7bf14490800000000000000
+      internalID: -7763647756530355245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalk_backward_cycle_contact_9f_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 15
+        width: 257
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811bae4b3dcdbb1d0800000000000000
+      internalID: -3333828297306230504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_0: 6102252306159130600
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_1: 2591153431774745754
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_2: 1808046556731351001
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_3: -1682879886823293032
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_4: 5933569380052461297
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_5: -1598067033923741690
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_6: -1732856619824206388
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_7: -7763647756530355245
+      playerwalk_backward_cycle_contact_9f_sprite_sheet_8: -3333828297306230504
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

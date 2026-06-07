@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: bbafba432fdceed4880d1f229ba49849
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1380920444801887282
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_0
+  - first:
+      213: -2977901151143076776
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_1
+  - first:
+      213: 1315931132016399898
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_2
+  - first:
+      213: -5898001564128765428
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_3
+  - first:
+      213: 5830668750063523071
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_4
+  - first:
+      213: -920683503610212788
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_5
+  - first:
+      213: 4675544794581254615
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_6
+  - first:
+      213: 5438402295694864486
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_7
+  - first:
+      213: -2439462210909219204
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_8
+  - first:
+      213: 1867368957287864879
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_9
+  - first:
+      213: 6957190657893220808
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_10
+  - first:
+      213: -9058024332241215692
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_11
+  - first:
+      213: -5366084284885732873
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_12
+  - first:
+      213: 2560345166629595302
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_13
+  - first:
+      213: 4414794481833946326
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_14
+  - first:
+      213: -7317603720064039834
+    second: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_0
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 591
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec352800c2cf5dce0800000000000000
+      internalID: -1380920444801887282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_1
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 607
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cd3ed3eae5ca6d0800000000000000
+      internalID: -2977901151143076776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_2
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 621
+        width: 57
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1617b87460234210800000000000000
+      internalID: 1315931132016399898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 583
+        width: 46
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a186d83d6162ea0800000000000000
+      internalID: -5898001564128765428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_4
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 575
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4d1820652bae050800000000000000
+      internalID: 5830668750063523071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_5
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 137
+        width: 713
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e40c04b331933f0800000000000000
+      internalID: -920683503610212788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_6
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 573
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d14174f73fd2e040800000000000000
+      internalID: 4675544794581254615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_7
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 265
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660bf84f216197b40800000000000000
+      internalID: 5438402295694864486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_8
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 251
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7654c34b0a452ed0800000000000000
+      internalID: -2439462210909219204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_9
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 235
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a1cb34c2a3ae910800000000000000
+      internalID: 1867368957287864879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_10
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 216
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c14466ea08ec8060800000000000000
+      internalID: 6957190657893220808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_11
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 158
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43fdaed7cde6b4280800000000000000
+      internalID: -9058024332241215692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_12
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 158
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1749c06c6d785b0800000000000000
+      internalID: -5366084284885732873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_13
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 146
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8685f1d5c288320800000000000000
+      internalID: 2560345166629595302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_14
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 145
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc211ec030844d30800000000000000
+      internalID: 4414794481833946326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_15
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 141
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664818adf26a27a90800000000000000
+      internalID: -7317603720064039834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_0: -1380920444801887282
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_1: -2977901151143076776
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_10: 6957190657893220808
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_11: -9058024332241215692
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_12: -5366084284885732873
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_13: 2560345166629595302
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_14: 4414794481833946326
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_15: -7317603720064039834
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_2: 1315931132016399898
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_3: -5898001564128765428
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_4: 5830668750063523071
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_5: -920683503610212788
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_6: 4675544794581254615
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_7: 5438402295694864486
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_8: -2439462210909219204
+      Stage_Man_Quarters_Bunk_Bed_SpoonCarvedHole_Draft01_9: 1867368957287864879
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
