@@ -33,9 +33,14 @@ public class GameDataManager : MonoBehaviour
     public Dictionary<string, DialogueGroupData> DialogueGroupDataList { get; private set; } = new Dictionary<string, DialogueGroupData>();
     public Dictionary<string, DialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DialogueData>();
     public Dictionary<string, InspectObjectData> InspectObjectDataList { get; private set; } = new Dictionary<string, InspectObjectData>();
+    public Dictionary<string, InspectAreaData> InspectAreaDataList { get; private set; } = new Dictionary<string, InspectAreaData>();
     public Dictionary<string, InspectTextData> InspectTextDataList { get; private set; } = new Dictionary<string, InspectTextData>();
+    public Dictionary<string, JournalData> JournalDataList { get; private set; } = new Dictionary<string, JournalData>();
     public Dictionary<string, InteractionObjectData> InteractionObjectDataList { get; private set; } = new Dictionary<string, InteractionObjectData>();
     public Dictionary<string, InteractionOptionData> InteractionOptionDataList { get; private set; } = new Dictionary<string, InteractionOptionData>();
+    public Dictionary<string, PopupTextData> PopupTextDataList { get; private set; } = new Dictionary<string, PopupTextData>();
+    public Dictionary<string, SoundData> SoundDataList { get; private set; } = new Dictionary<string, SoundData>();
+    public Dictionary<string, PlayerOptionByStageTypeData> PlayerOptionByStageTypeDataList { get; private set; } = new Dictionary<string, PlayerOptionByStageTypeData>();
     public Dictionary<string, FieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, FieldObjectData>();
     public Dictionary<string, MonsterData> MonsterDataList { get; private set; } = new Dictionary<string, MonsterData>();
 
@@ -172,6 +177,27 @@ public class GameDataManager : MonoBehaviour
         {
             InspectTextDataList = new Dictionary<string, InspectTextData>();
         }
+
+        if (HasJsonTable("InspectArea"))
+        {
+            InspectAreaDataList = LoadData<InspectAreaData>("InspectArea");
+        }
+        else
+        {
+            InspectAreaDataList = new Dictionary<string, InspectAreaData>();
+        }
+    }
+
+    public void LoadJournalData()
+    {
+        if (HasJsonTable("Journal"))
+        {
+            JournalDataList = LoadData<JournalData>("Journal");
+        }
+        else
+        {
+            JournalDataList = new Dictionary<string, JournalData>();
+        }
     }
 
     public void LoadInteractionData()
@@ -192,6 +218,39 @@ public class GameDataManager : MonoBehaviour
         else
         {
             InteractionOptionDataList = new Dictionary<string, InteractionOptionData>();
+        }
+
+        if (HasJsonTable("PopupText"))
+        {
+            PopupTextDataList = LoadData<PopupTextData>("PopupText");
+        }
+        else
+        {
+            PopupTextDataList = new Dictionary<string, PopupTextData>();
+        }
+    }
+
+    public void LoadPlayerOptionByStageTypeData()
+    {
+        if (HasJsonTable("PlayerOptionByStageType"))
+        {
+            PlayerOptionByStageTypeDataList = LoadData<PlayerOptionByStageTypeData>("PlayerOptionByStageType");
+        }
+        else
+        {
+            PlayerOptionByStageTypeDataList = new Dictionary<string, PlayerOptionByStageTypeData>();
+        }
+    }
+
+    public void LoadSoundData()
+    {
+        if (HasJsonTable("Sound"))
+        {
+            SoundDataList = LoadData<SoundData>("Sound");
+        }
+        else
+        {
+            SoundDataList = new Dictionary<string, SoundData>();
         }
     }
 
@@ -268,6 +327,20 @@ public class GameDataManager : MonoBehaviour
         return InspectTextDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
+    public InspectAreaData GetInspectAreaData(string dataId)
+    {
+        if (InspectAreaDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return InspectAreaDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public JournalData GetJournalData(string dataId)
+    {
+        if (JournalDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return JournalDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
     public InteractionObjectData GetInteractionObjectData(string dataId)
     {
         if (InteractionObjectDataList == null || string.IsNullOrEmpty(dataId)) return null;
@@ -280,6 +353,41 @@ public class GameDataManager : MonoBehaviour
         if (InteractionOptionDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return InteractionOptionDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public PopupTextData GetPopupTextData(string dataId)
+    {
+        if (PopupTextDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return PopupTextDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public PlayerOptionByStageTypeData GetPlayerOptionByStageTypeData(StageType stageType)
+    {
+        if (PlayerOptionByStageTypeDataList == null) return null;
+
+        foreach (var dataPair in PlayerOptionByStageTypeDataList)
+        {
+            PlayerOptionByStageTypeData data = dataPair.Value;
+            if (data == null)
+            {
+                continue;
+            }
+
+            if (GameUtil.IsSameEnumText(data.StageType, stageType))
+            {
+                return data;
+            }
+        }
+
+        return null;
+    }
+
+    public SoundData GetSoundData(string dataId)
+    {
+        if (SoundDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return SoundDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
     public MonsterData GetMonsterData(string dataId)

@@ -4,6 +4,8 @@ public class InputManager : MonoBehaviour
 {
     public static InputManager Instance { get; private set; }
 
+    private static int _consumedPrimaryClickFrame = -1;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -46,7 +48,17 @@ public class InputManager : MonoBehaviour
 
     public static bool GetPrimaryClickDown()
     {
+        if (_consumedPrimaryClickFrame == Time.frameCount)
+        {
+            return false;
+        }
+
         return Input.GetMouseButtonDown(0);
+    }
+
+    public static void ConsumePrimaryClickForFrame()
+    {
+        _consumedPrimaryClickFrame = Time.frameCount;
     }
 
     public static Vector3 GetPointerScreenPosition(float zPosition)
@@ -61,9 +73,39 @@ public class InputManager : MonoBehaviour
         return Input.GetKeyDown(KeyCode.I);
     }
 
+    public static bool GetMiniMapToggleDown()
+    {
+        return Input.GetKeyDown(KeyCode.M);
+    }
+
+    public static bool GetJournalToggleDown()
+    {
+        return Input.GetKeyDown(KeyCode.J);
+    }
+
+    public static bool GetPlayerMenuNextTabDown()
+    {
+        return Input.GetKeyDown(KeyCode.Tab);
+    }
+
+    public static bool GetCloseUIDown()
+    {
+        return Input.GetKeyDown(KeyCode.X);
+    }
+
+    public static bool GetInteractionMenuTestDown()
+    {
+        return Input.GetKeyDown(KeyCode.U);
+    }
+
     public static bool GetDialogueNextDown()
     {
         return
             Input.GetKeyDown(KeyCode.Z);
+    }
+
+    public static bool GetTextWindowToggleDown()
+    {
+        return Input.GetKeyDown(KeyCode.LeftShift);
     }
 }

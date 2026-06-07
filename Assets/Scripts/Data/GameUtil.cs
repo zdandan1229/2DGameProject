@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public static class GameUtil
 {
+    private const char SpritePathSeparator = '|';
+
     // 마지막으로 할당된 ID를 전역적으로 기록 (스레드 안전)
     private static long _lastId = 0;
 
@@ -18,7 +20,10 @@ public static class GameUtil
         GameDataManager.Instance.LoadCharacterData("Character");
         GameDataManager.Instance.LoadDialogueData();
         GameDataManager.Instance.LoadInspectData();
+        GameDataManager.Instance.LoadJournalData();
         GameDataManager.Instance.LoadInteractionData();
+        GameDataManager.Instance.LoadSoundData();
+        GameDataManager.Instance.LoadPlayerOptionByStageTypeData();
     }
 
     public static int CalcCharacterFinalDamage(int curCharacterLevel, int levelPerDamage, bool isCritical)
@@ -28,8 +33,98 @@ public static class GameUtil
         return finalDamage;
     }
 
+    public static bool TryParseBoolText(string text, out bool value)
+    {
+        value = false;
+
+        if (string.IsNullOrEmpty(text))
+        {
+            Debug.LogWarning("bool 값으로 해석할 문자열이 비어 있습니다.");
+            return false;
+        }
+
+        string normalizedText = text.Trim().ToUpperInvariant();
+        if (normalizedText == "O" || normalizedText == "TRUE" || normalizedText == "1")
+        {
+            value = true;
+            return true;
+        }
+
+        if (normalizedText == "X" || normalizedText == "FALSE" || normalizedText == "0")
+        {
+            value = false;
+            return true;
+        }
+
+        Debug.LogWarning($"bool 값으로 해석할 수 없습니다: {text}");
+        return false;
+    }
+
+    public static bool ParseBoolText(string text)
+    {
+        if (TryParseBoolText(text, out bool value))
+        {
+            return value;
+        }
+
+        return false;
+    }
+
+    public static bool TryParseEnumText<TEnum>(string text, out TEnum value) where TEnum : struct
+    {
+        value = default;
+
+        if (typeof(TEnum).IsEnum == false)
+        {
+            Debug.LogError($"{typeof(TEnum).Name}은 enum 타입이 아닙니다.");
+            return false;
+        }
+
+        if (string.IsNullOrEmpty(text))
+        {
+            Debug.LogWarning($"{typeof(TEnum).Name} 값으로 해석할 문자열이 비어 있습니다.");
+            return false;
+        }
+
+        string normalizedText = text.Trim();
+        if (Enum.TryParse(normalizedText, true, out value) == false)
+        {
+            Debug.LogWarning($"{typeof(TEnum).Name} 값으로 해석할 수 없습니다: {text}");
+            return false;
+        }
+
+        if (Enum.IsDefined(typeof(TEnum), value) == false)
+        {
+            Debug.LogWarning($"{typeof(TEnum).Name}에 정의되지 않은 값입니다: {text}");
+            return false;
+        }
+
+        return true;
+    }
+
+    public static bool IsSameEnumText<TEnum>(string text, TEnum enumValue) where TEnum : struct
+    {
+        if (TryParseEnumText(text, out TEnum parsedValue) == false)
+        {
+            return false;
+        }
+
+        return EqualityComparer<TEnum>.Default.Equals(parsedValue, enumValue);
+    }
+
     public static Sprite LoadSpriteCanBeNull(string spriteName)
     {
+        if (string.IsNullOrEmpty(spriteName))
+        {
+            Debug.LogWarning("스프라이트 경로가 비어 있어 에셋을 로드할 수 없습니다.");
+            return null;
+        }
+
+        if (spriteName.Contains(SpritePathSeparator))
+        {
+            return LoadInnerSpriteCanBeNull(spriteName);
+        }
+
         // 1. Resources/ 경로에서 이름으로 스프라이트 로드
         // 예: spriteName이 "Sword"라면 Assets/Resources/2D/Sword.png를 찾음
         // 이 2D같은 경로는 나중에 Sprite, Texture 등등 다양하게 바꿔도 무관합니다!
@@ -41,6 +136,43 @@ public static class GameUtil
         }
 
         Debug.LogError($"에셋을 찾을 수 없습니다: {spriteName}");
+        return null;
+    }
+
+    private static Sprite LoadInnerSpriteCanBeNull(string spriteName)
+    {
+        int separatorIndex = spriteName.IndexOf(SpritePathSeparator);
+        string spriteResourcePath = spriteName.Substring(0, separatorIndex).Trim();
+        string innerSpriteName = spriteName.Substring(separatorIndex + 1).Trim();
+
+        if (string.IsNullOrEmpty(spriteResourcePath) || string.IsNullOrEmpty(innerSpriteName))
+        {
+            Debug.LogWarning($"내부 스프라이트 경로 형식이 올바르지 않습니다. 형식 : Resources경로|스프라이트이름, 입력값 : {spriteName}");
+            return null;
+        }
+
+        Sprite[] loadedSpriteList = Resources.LoadAll<Sprite>(spriteResourcePath);
+        if (loadedSpriteList == null || loadedSpriteList.Length <= 0)
+        {
+            Debug.LogError($"내부 스프라이트를 찾을 Resources 에셋을 로드할 수 없습니다: {spriteResourcePath}");
+            return null;
+        }
+
+        for (int i = 0; i < loadedSpriteList.Length; i++)
+        {
+            Sprite loadedSprite = loadedSpriteList[i];
+            if (loadedSprite == null)
+            {
+                continue;
+            }
+
+            if (loadedSprite.name == innerSpriteName)
+            {
+                return loadedSprite;
+            }
+        }
+
+        Debug.LogError($"내부 스프라이트를 찾을 수 없습니다. Resources 경로 : {spriteResourcePath}, 내부 이름 : {innerSpriteName}");
         return null;
     }
 

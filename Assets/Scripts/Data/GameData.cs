@@ -19,6 +19,15 @@ public class CharacterData : GameDataBase
     public string PortraitPath;
     public string PrefabPath;
     public string Description;
+    public string CharacterFileData1;
+    public string CharacterFileData2;
+    public string CharacterFileData3;
+    public string CharacterFileData4;
+    public string DialoguePortraitDefault;
+    public string DialoguePortraitHateDefault;
+    public string DialoguePortraitLikeDefault;
+    public string DialoguePortraitSickDefault;
+    public string DialoguePortraitMadnessDefault;
 }
 
 [System.Serializable]
@@ -66,9 +75,14 @@ public class DialogueData : GameDataBase
     public string CharacterDataId;
     public string Description;
     public string NextDialogueId;
+    public string CompleteJournalDataId;
+    public string BGM;
+    public string OpenInspectObjectDataId;
+    public string DialogueFlagId;
     public List<string> SelectionNameList;
     public List<string> SelectionDialogueIdList;
     public string CharacterPortraitPath;
+    public int AddLikeAbility;
 }
 
 [System.Serializable]
@@ -79,6 +93,17 @@ public class InspectObjectData : GameDataBase
     public string PrefabPath;
     public string IconPath;
     public string StartInspectTextId;
+    public string CompleteRewardType;
+    public string CompleteJournalDataId;
+    public string CompleteInspectDescription;
+}
+
+[System.Serializable]
+public class InspectAreaData : GameDataBase
+{
+    public string Name;
+    public string Description;
+    public string PrefabPath;
 }
 
 [System.Serializable]
@@ -88,10 +113,28 @@ public class InspectTextData : GameDataBase
 }
 
 [System.Serializable]
+public class JournalData : GameDataBase
+{
+    public string Title;
+    public string Description;
+    public string InspectText;
+    public string InspectTextId;
+    public string InspectDescription;
+}
+
+[System.Serializable]
 public class InteractionObjectData : GameDataBase
 {
     public string Name;
     public List<string> InteractionOptionIdList;
+    public string CharacterDataId;
+    public string DialogueDataId;
+    public string RepeatDialogueDataId;
+    public string DialogueCompleteFlagId;
+    public string InspectObjectDataId;
+    public string InspectAreaDataId;
+    public string JournalDataId;
+    public string PopupTextDataId;
 }
 
 [System.Serializable]
@@ -99,7 +142,29 @@ public class InteractionOptionData : GameDataBase
 {
     public string ButtonText;
     public string ActionType;
-    public string TargetDataId;
+}
+
+[System.Serializable]
+public class PopupTextData : GameDataBase
+{
+    public string Description;
+}
+
+[System.Serializable]
+public class SoundData : GameDataBase
+{
+    public string AudioPath;
+    public float Volume;
+    public float Pitch;
+    public bool IsLoop;
+}
+
+[System.Serializable]
+public class PlayerOptionByStageTypeData : GameDataBase
+{
+    public string StageType;
+    public float PlayerScale;
+    public float MoveSpeed;
 }
 
 [System.Serializable]
