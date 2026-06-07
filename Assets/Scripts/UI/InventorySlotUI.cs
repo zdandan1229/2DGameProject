@@ -4,7 +4,7 @@ using System;
 
 public class InventorySlotUI : MonoBehaviour
 {
-    private const string DefaultIconPath = "Sprites/Icon/Icon_Test";
+    private const string DefaultIconPath = "Icons/Icon_Test";
 
     [SerializeField] private Image Image_Icon;
     [SerializeField] private Button Button_Slot;

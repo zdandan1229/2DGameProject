@@ -1,15 +1,34 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class InspectPoint : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private string _inspectTextId;
+    [SerializeField] private string _inspectObjectDataId;
+    [SerializeField] private string _completeFlagId;
+    [SerializeField] private string _completeJournalDataId;
     [SerializeField] private float _alphaHitTestMinimumThreshold = 0.1f;
 
     public string InspectTextId
     {
         get { return _inspectTextId; }
+    }
+
+    public bool HasInspectTarget()
+    {
+        return string.IsNullOrEmpty(_inspectTextId) == false ||
+               string.IsNullOrEmpty(_inspectObjectDataId) == false;
+    }
+
+    public string CompleteFlagId
+    {
+        get { return _completeFlagId; }
+    }
+
+    public string CompleteJournalDataId
+    {
+        get { return _completeJournalDataId; }
     }
 
     private void Awake()
@@ -29,9 +48,9 @@ public class InspectPoint : MonoBehaviour, IPointerClickHandler
 
     private void RequestShowInspectText()
     {
-        if (string.IsNullOrEmpty(_inspectTextId))
+        if (HasInspectTarget() == false)
         {
-            Debug.LogWarning($"{gameObject.name}의 조사 텍스트 ID가 비어 있습니다.");
+            Debug.LogWarning($"{gameObject.name}의 조사 텍스트 ID와 조사 오브젝트 ID가 모두 비어 있습니다.");
             return;
         }
 
@@ -39,6 +58,12 @@ public class InspectPoint : MonoBehaviour, IPointerClickHandler
         if (inspectObjectUI == null)
         {
             Debug.LogWarning($"{gameObject.name}의 부모에서 InspectObjectUI를 찾지 못했습니다.");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(_inspectObjectDataId) == false)
+        {
+            inspectObjectUI.OpenInspectObjectFromArea(_inspectObjectDataId, this);
             return;
         }
 
